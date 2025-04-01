@@ -158,7 +158,7 @@ const AboutSection = () => {
       logo: "https://i.postimg.cc/SNQCjKfv/images.jpg", // Replace with your logo URL
       role: "Resonance Junior College",
       period: "March 2021 - June 2023",
-      description: "I completed my 12th grade with 97.3%, developing a strong foundation in subjects like Mathematics, Physics, and Computer Science. This academic achievement fueled my interest in technology and motivated me to pursue a B.Tech in Information Technology.",
+      description: "I completed my 12th grade with 97.3%, developing a strong foundation in subjects like Mathematics, Physics, and Chemistry. Since then I have developed interest in technology and motivated me to pursue a B.Tech in Information Technology.",
       skills: ["Maths", "Physics", "Chemistry"],
       bgColor: "#2A1B30" // Custom background color
     }
