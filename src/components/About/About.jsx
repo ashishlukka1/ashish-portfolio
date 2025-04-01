@@ -335,7 +335,7 @@ const AboutSection = () => {
         <div className="row mb-5">
           <div className="col-12">
             <h2 className="friend-title mb-4">Friends</h2>
-            <p className="friends-intro mb-5">Friends I've made that helped me learn, grow and evolve into the version I am today. Hopefully always be the authentic one.</p>
+            <p className="friends-intro mb-5">Friends I've made that helped me learn, grow and evolve into the version I am today.</p>
             
             <div className="row">
               {friends.map((friend, index) => (
