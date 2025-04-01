@@ -1,8 +1,10 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Work.css';
+import { useNavigate } from "react-router-dom";
 
 const ProductCards = () => {
+    const navigate = useNavigate();
   return (
     <div className="product-grid-container">
       <div className="row product-grid">
@@ -58,13 +60,13 @@ const ProductCards = () => {
         <div className="col-md-6 mb-4">
           <div className="product-card">
             <div className="card-image-container">
-              <img src="" alt="" className="card-image" />
+              <img src="https://i.postimg.cc/3R8QzqRD/Untitled-design-7-1.png" alt="" className="card-image" />
               <div className="card-overlay mt-4">
-                <h3 className="card-title "></h3>
+                <h3 className="card-title ">Project-4</h3>
               </div>
             </div>
             <div className="card-footer">
-              <p className="card-description"></p>
+              <p className="card-description">Coming Soon</p>
             </div>
           </div>
         </div>

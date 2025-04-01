@@ -15,7 +15,7 @@ const Home = () => {
             {/* Text Content */}
             <div className="col-md-7 mb-5 mt-5 mb-md-0">
               <h1 className="hero-title">Hello, I am Ashish Lukka</h1>
-              <div className="status-badge mb-4">
+              <div className="status-badge">
                 <span className="d-flex align-items-center">
                   <span className="status-dot"></span>
                   MERN STACK DEVELOPER | OPEN TO WORK
@@ -29,11 +29,11 @@ const Home = () => {
               <div className="hero-cta mt-4 mb-2">
                 <a
                   href="https://drive.google.com/file/d/19DOrqBt6M33FIKEJ9PGICzueeEZM6oND/view?usp=sharing"
-                  className="primary-btn me-3"
+                  className="primary-btn me-2"
                   target="_blank"
                 >
                   Resume
-                  <ArrowRight size={16} className="ms-2" />
+                  <ArrowRight size={20} className="ms-2" />
                 </a>
                 <a className="secondary-btn" onClick={() => {navigate('/work')}}>
                   View All Projects
@@ -61,7 +61,7 @@ const Home = () => {
       </div>
 
       {/* Project Cards */}
-      <div className="container pb-5">
+      <div className="container pb-4">
         <div className="row g-4">
           {/* Card 1 */}
           <div className="col-12">
@@ -274,10 +274,10 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="text-center mt-5">
+        <div className="text-center mt-5 mb-5">
           <a href="#" className="view-all-projects" onClick={()=>{navigate('/work')}}>
             <span>View All Projects</span>
-            <ArrowRight size={16} />
+            <ArrowRight size={20} />
           </a>
         </div>
       </div>

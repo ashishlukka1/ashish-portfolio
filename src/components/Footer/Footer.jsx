@@ -7,7 +7,8 @@ import { useNavigate } from "react-router-dom";
 const Footer = () => {
   const [copied, setCopied] = useState(false);
   const email = "ashishlukka2005@gmail.com";
-    const navigate = useNavigate();
+  const navigate = useNavigate();
+  
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(email);
     setCopied(true);
@@ -15,21 +16,11 @@ const Footer = () => {
   };
 
   return (
-    <footer className="custom-footer ">
+    <footer className="custom-footer">
       <div className="footer-container">
         <div className="footer-row">
-          {/* Categories Column (Moved to left) */}
-          <div className="footer-col">
-            <h3 className="category-title">CATEGORIES</h3>
-            <nav>
-            <a href="/" className="nav-link" onClick={()=>{navigate('/')}}>Home</a>
-              <a href="#" className="nav-link" onClick={()=>{navigate('/work')}}>Work</a>
-              <a href="#" className="nav-link" onClick={()=>{'/about'}}>About</a>
-            </nav>
-          </div>
-          
-          {/* Middle Column with Email */}
-          <div className="footer-col">
+          {/* Left Column with Heading */}
+          <div className="footer-col footer-col-left">
             <h2 className="footer-heading">Let's make something great together!</h2>
             <button className="email-button" onClick={handleCopyEmail}>
               <MdEmail className="email-icon" size={16} />
@@ -42,18 +33,32 @@ const Footer = () => {
             </button>
           </div>
           
-          {/* Right Column - Social Icons */}
-          <div className="footer-col footer-col-right">
-            <div className="social-icons">
-              <a href="https://www.instagram.com/ashhiiiish/" className="social-icon" target="_blank">
-                <FaInstagram size={20} />
-              </a>
-              <a href="https://www.linkedin.com/in/ashish-lukka/" className="social-icon" target="_blank">
-                <FaLinkedin size={20} />
-              </a>
-              <a href="https://github.com/ashishlukka1" target="_blank" className="social-icon">
-                <FaGithub size={20} />
-              </a>
+          {/* Categories Column Group (Right Side) */}
+          <div className="footer-categories-group">
+            {/* Middle Column - MULTI-DISCIPLINED */}
+            <div className="footer-col footer-col-category">
+              <h3 className="category-title">CATEGORY</h3>
+              <nav className="footer-nav">
+                <a href="/" className="nav-links">Home</a>
+                <a href="/work" className="nav-links">Work</a>
+                <a href="/about" className="nav-links">About</a>
+              </nav>
+            </div>
+            
+            {/* Right Column - SOCIAL */}
+            <div className="footer-col footer-col-category">
+              <h3 className="category-title">SOCIAL</h3>
+              <div className="social-icons">
+                <a href="https://www.instagram.com/ashhiiiish/" className="social-icon round-icon" target="_blank">
+                  <FaInstagram size={30} />
+                </a>
+                <a href="https://www.linkedin.com/in/ashish-lukka/" className="social-icon round-icon" target="_blank">
+                  <FaLinkedin size={30} />
+                </a>
+                <a href="https://github.com/ashishlukka1" className="social-icon round-icon" target="_blank">
+                  <FaGithub size={30} />
+                </a>
+              </div>
             </div>
           </div>
         </div>
