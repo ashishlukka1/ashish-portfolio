@@ -274,7 +274,7 @@ const AboutSection = () => {
                     <div className="timeline-line"></div>
                     <div className="timeline-circle">
                       {edu.logo ? (
-                        <a href={`https://${edu.company.toLowerCase()}.com`} target="_blank" rel="noopener noreferrer">
+                        <a target="_blank" rel="noopener noreferrer">
                           <img src={edu.logo} alt={`${edu.company} logo`} className="timeline-logo" />
                         </a>
                       ) : (
