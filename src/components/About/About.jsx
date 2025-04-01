@@ -243,7 +243,7 @@ const AboutSection = () => {
           </div>
         </div>
         
-<div className="row mb-5">
+<div className="row mb-4">
   <div className="col-12 mm">
     <div className="row">
       {clickableCards.map((card, index) => (
@@ -266,7 +266,7 @@ const AboutSection = () => {
         {/* Education Section with Timeline */}
         <div className="row mb-5">
           <div className="col-12">
-            <h2 className="section-subtitle mb-4">Education</h2>
+            <h2 className="friend-title mb-4">Education</h2>
             <div className="timeline-container">
               {education.map((edu, index) => (
                 <div key={index} className="timeline-item">
