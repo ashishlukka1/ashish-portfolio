@@ -207,13 +207,13 @@ const AboutSection = () => {
   // Friends data
   const friends = [
     {
-      name: "Ashish Lukka",
+      name: "Srikar Janjirala",
       role: "Team Lead - Lumora",
       website: "www.linkedin.com/in/srikar-janjirala/"
     },
     {
-      name: "Srikar Janjirala",
-      role: "Assistant Team Lead - Lumora",
+      name: "Ashish Lukka",
+      role: "Associate Team Lead - Lumora",
       website: "www.linkedin.com/in/srikar-janjirala/"
     },
     {
