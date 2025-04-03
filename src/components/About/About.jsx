@@ -334,8 +334,8 @@ const AboutSection = () => {
         {/* Friends/Team Section */}
         <div className="row mb-5">
           <div className="col-12">
-            <h2 className="friend-title mb-4">Friends</h2>
-            <p className="friends-intro mb-5">Friends I've made that helped me learn, grow and evolve into the version I am today.</p>
+            <h2 className="friend-title mb-4">Team Lumora</h2>
+            <p className="friends-intro mb-5">A passionate tech team dedicated to building innovative, scalable, and user-centric solutions that empower the digital world.</p>
             
             <div className="row">
               {friends.map((friend, index) => (
