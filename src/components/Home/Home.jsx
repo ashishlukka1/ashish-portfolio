@@ -57,7 +57,7 @@ const Home = () => {
 
       {/* Projects Heading */}
       <div className="container mt-2">
-        <h1 className="section-title ">Explore Featured Projects</h1>
+        <h1 className="section-title1 ">Explore Featured Projects</h1>
       </div>
 
       {/* Project Cards */}

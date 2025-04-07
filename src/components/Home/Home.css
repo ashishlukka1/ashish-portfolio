@@ -189,13 +189,12 @@ body {
 }
 
 /* Section titles */
-.section-title {
+.section-title1 {
   font-size: 1.8rem;
   font-weight: 600;
-  letter-spacing: -0.5px;
+  /* letter-spacing: -0.5px; */
   margin-top: 20px;
   margin-bottom: 3rem;
-  padding: 0 1rem; /* Added to maintain consistent padding with navbar */
 }
 
 /* Container padding to match navbar */
