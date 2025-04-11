@@ -7,7 +7,7 @@
 }
 body{
   min-height: 200vh;
-  background-color: var(--bg-dark);
+  /* background-color: var(--bg-dark); */
 }
 /* :root {
   --bg-dark: #00060D;

@@ -1,4 +1,5 @@
 import React from "react";
+import SplitText from '../../../ReactBits/SplitText/SplitText'
 import { Github, ExternalLink, Mail, ArrowRight } from "lucide-react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Home.css";
@@ -6,6 +7,9 @@ import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const navigate = useNavigate();
+  const handleAnimationComplete = () => {
+    console.log('All letters have animated!');
+  };
   return (
     <div className="portfolio-container ">
       {/* Hero Section */}
@@ -14,7 +18,17 @@ const Home = () => {
           <div className="row align-items-center">
             {/* Text Content */}
             <div className="col-md-7 mb-5 mt-5 mb-md-0">
-              <h1 className="hero-title">Hello, I am Ashish Lukka</h1>
+              <SplitText
+                text="Hello, I am Ashish Lukka"
+                className="hero-title"
+                delay={150}
+                animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+                animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                easing="easeOutCubic"
+                threshold={0.2}
+                rootMargin="-50px"
+                onLetterAnimationComplete={handleAnimationComplete}
+              />
               <div className="status-badge">
                 <span className="d-flex align-items-center">
                   <span className="status-dot"></span>
