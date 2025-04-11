@@ -123,7 +123,7 @@
     width: 30px;
     height: 2px;
     background-color: var(--white);
-    margin-top: 40px;
+    margin-top: 45px;
     margin-right: 10px;
   }
   
@@ -347,4 +347,5 @@
     border: 2px solid var(--grey);
   }
 
+  
   

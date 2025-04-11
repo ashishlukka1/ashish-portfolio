@@ -1,10 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Work.css';
 import { useNavigate } from "react-router-dom";
 
 const ProductCards = () => {
     const navigate = useNavigate();
+    
+    useEffect(() => {
+      const cards = document.querySelectorAll('.product-card');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      cards.forEach(card => {
+        observer.observe(card);
+      });
+      
+      return () => observer.disconnect();
+    }, []);
+    
   return (
     <div className="product-grid-container">
       <div className="row product-grid">
@@ -66,7 +85,7 @@ const ProductCards = () => {
               <a href="https://digital-academic-library.vercel.app/" target='_blank'>
               <img src="https://i.postimg.cc/MpC4zC60/aboutmockups.png" alt="" className="card-image" /></a>
               <div className="card-overlay mt-4">
-                <h3 className="card-title ">Digital Academic Library</h3>
+                <h3 className="card-title">Digital Academic Library</h3>
               </div>
             </div>
             <div className="card-footer">
