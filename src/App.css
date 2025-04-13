@@ -5,10 +5,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-body{
-  min-height: 200vh;
-  /* background-color: var(--bg-dark); */
-}
+
 /* :root {
   --bg-dark: #00060D;
   --dark-grey: #404040;

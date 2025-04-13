@@ -31,7 +31,7 @@ body {
 
 /* Add top padding to account for fixed navbar */
 .portfolio-container {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   /* background-color: var(--bg-dark); */
   color: var(--white);
   max-width: 1300px;
