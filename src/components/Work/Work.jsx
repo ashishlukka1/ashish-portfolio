@@ -47,7 +47,7 @@ const ProductCards = () => {
           <div className="product-card">
             <div className="card-image-container">
               <a href="https://draft-blogapp.vercel.app/" target='_blank'>
-              <img src="https://i.postimg.cc/05B8knJS/Untitled-design-5-1.png" alt="Draft-blogapp" className="card-image" /></a>
+              <img src="https://i.postimg.cc/L5x55XsQ/aboutmockups-2-1.png" alt="Draft-blogapp" className="card-image" /></a>
               <div className="card-overlay mt-4">
                 <h3 className="card-title">DRAFT - BLOG APP</h3>
               </div>
@@ -58,7 +58,6 @@ const ProductCards = () => {
           </div>
         </div>
 
-        {/* Card 3: Wiz Partners */}
         <div className="col-md-6 mb-4">
           <div className="product-card">
             <div className="card-image-container">
