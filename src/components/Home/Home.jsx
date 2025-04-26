@@ -272,7 +272,7 @@ const Home = () => {
                           </div>
                         </div>
                         <div className="project-buttons fade-in delay-600">
-                          <a href="https://stalwart-cat-1329d9.netlify.app/" className="view-project" target="_blank">
+                          <a href="https://vnrvjiet-seminar-hall.vercel.app/" className="view-project" target="_blank">
                             <span>View Project</span>
                             <ExternalLink size={16} />
                           </a>
