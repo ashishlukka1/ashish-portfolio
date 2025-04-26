@@ -61,7 +61,7 @@ const ProductCards = () => {
         <div className="col-md-6 mb-4">
           <div className="product-card">
             <div className="card-image-container">
-              <a href="https://stalwart-cat-1329d9.netlify.app/" target="_blank">
+              <a href="https://vnrvjiet-seminar-hall.vercel.app/" target="_blank">
               <img src="https://i.postimg.cc/rpHBXVmt/Untitled-design-6-1.png" alt="seminar hall" className="card-image" /></a>
 
               <div className="card-overlay mt-4">
