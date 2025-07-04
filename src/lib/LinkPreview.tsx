@@ -10,7 +10,7 @@ import {
   useSpring,
 } from "motion/react";
 
-import { cn } from "../lib/util";
+import { cn } from "../Lib/util.js";
 
 export const LinkPreview = ({
   children,
@@ -80,7 +80,7 @@ export const LinkPreview = ({
             href={url}
             target="_blank"
             rel="noopener noreferrer"
-            className={cn("text-black dark:text-white", className)}
+            className={cn("", className)}
           >
             {children}
           </a>
