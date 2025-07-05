@@ -1,4 +1,4 @@
-import { LinkPreview } from "../Lib/LinkPreview";
+import { LinkPreview } from "../Lib/LinkPreview.tsx";
 
 function ContactCard({ copied, handleCopy }) {
   return (
