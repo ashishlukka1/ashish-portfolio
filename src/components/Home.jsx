@@ -45,8 +45,8 @@ function Home() {
         <ProjectCard
           title="Olive Skill Test"
           description="Built a demo training system for onboarding and progress tracking, inspired by the original product from my internship."
-          link="https://olive-skill-test.vercel.app/"
-          image="https://i.postimg.cc/DwQZ6Kf8/Screenshot-2025-07-02-151216.png"
+          link="https://olive-skill-test.vercel.app/" 
+          image="https://i.postimg.cc/DwQZ6Kf8/Screenshot-2025-07-02-151216.png"  
           className="bento-card4"
         />
         <ProjectCard
