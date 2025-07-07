@@ -1,6 +1,6 @@
 // src/components/ProjectCard.jsx
 import { MdArrowOutward } from "react-icons/md";
-import { LinkPreview } from "../Lib/LinkPreview.tsx";
+import { LinkPreview } from "./LinkPreview.tsx";
 
 function ProjectCard({ title, description, link, image, className }) {
   return (
