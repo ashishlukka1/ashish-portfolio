@@ -10,7 +10,7 @@ import {
   useSpring,
 } from "motion/react";
 
-import { cn } from "../Lib/util.js";
+import { cn } from "../Lib/util";
 
 export const LinkPreview = ({
   children,
