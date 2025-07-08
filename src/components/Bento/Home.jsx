@@ -15,7 +15,7 @@ const achievements = [
     image: "https://i.postimg.cc/52yzT71B/1744132148860.jpg",
     title: "Webathon - 3.0 2025 Winner",
     description:
-      "Built Digital Academic Library, a real-time collaboration platform with AI-powered support, securing 1st place in a 24-hour hackathon.",
+      " Won 1st place in Webathon 3.0, a 24-hour hackathon conducted by ACM VNRVJIET, by developing a full-featured digital academic library. Showcased end-to-end development skills, effective team collaboration, and the ability to deliver impactful solutions under pressure.",
   },
   {
     image: "https://i.postimg.cc/VLy6wzML/Web-Alchemy-Winner-Certificate.png",
