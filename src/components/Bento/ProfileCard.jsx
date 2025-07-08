@@ -49,7 +49,7 @@ function ProfileCard({ setModalOpen }) {
         <img
           src="https://i.postimg.cc/ZK4vnYyj/asdasdasd.png"
           alt="Ashish Lukka - Profile"
-          className="profile-image"
+          className="profile-image1"
         />
       </div>
     </div>

@@ -4,7 +4,7 @@ import { LinkPreview } from "./LinkPreview.tsx";
 
 function ProjectCard({ title, description, link, image, className }) {
   return (
-    <div className={`bento-card ${className} project-card`} style={{ backgroundImage: `url('')` }}>
+    <div className={`bento-card ${className} project-card1`} style={{ backgroundImage: `url('')` }}>
       <LinkPreview url={link} imageSrc={image} isStatic className="project-arrow-link text-white">
         <a
           href={link}
@@ -18,8 +18,8 @@ function ProjectCard({ title, description, link, image, className }) {
       </LinkPreview>
 
       <div className="project-content">
-        <h3 className="project-title">{title}</h3>
-        <p className="project-description">{description}</p>
+        <h3 className="project-title1">{title}</h3>
+        <p className="project-description1">{description}</p>
       </div>
     </div>
   );

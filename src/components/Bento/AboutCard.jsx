@@ -1,10 +1,21 @@
 import {
-  FaGithub, FaLinkedin, FaJava, FaHtml5, FaCss3Alt,
-  FaBootstrap, FaJs, FaReact, FaNodeJs, FaPython
+  FaGithub,
+  FaLinkedin,
+  FaJava,
+  FaHtml5,
+  FaCss3Alt,
+  FaBootstrap,
+  FaJs,
+  FaReact,
+  FaNodeJs,
+  FaPython,
 } from "react-icons/fa";
 import {
-  SiExpress, SiMongodb, SiNotion,
-  SiPostman, SiTailwindcss
+  SiExpress,
+  SiMongodb,
+  SiNotion,
+  SiPostman,
+  SiTailwindcss,
 } from "react-icons/si";
 
 function AboutCard() {
@@ -19,7 +30,7 @@ function AboutCard() {
           I build websites by the day and watch twitch streams by the night
           (thanks, time zones).
         </div>
-        <div className="tech-stack">
+        <div className="tech-stack1">
           <div className="tech-stack-title">Tech Stack</div>
           <div className="tech-icons-container">
             <div className="tech-icons-scroll">
@@ -40,18 +51,7 @@ function AboutCard() {
           </div>
         </div>
         <div className="education">
-          <div className="tech-stack-title">Education</div>
-          <div className="edu-item">
-            <img
-              src="https://pbs.twimg.com/profile_images/1688442970587201536/dCewVE4I_200x200.jpg"
-              alt="VNR VJIET"
-              className="edu-logo"
-            />
-            <div>
-              <div className="edu-title">VNR VJIET</div>
-              <div className="edu-duration">2023 – 2027</div>
-            </div>
-          </div>
+          
           <div className="tech-stack-title">Internship</div>
           <div className="edu-item">
             <img
@@ -64,6 +64,18 @@ function AboutCard() {
               <div className="edu-duration">June 2025 – July 2025</div>
             </div>
           </div>
+          <div className="tech-stack-title">Education</div>
+          <div className="edu-item">
+            <img
+              src="https://pbs.twimg.com/profile_images/1688442970587201536/dCewVE4I_200x200.jpg"
+              alt="VNR VJIET"
+              className="edu-logo"
+            />
+            <div>
+              <div className="edu-title">VNR VJIET</div>
+              <div className="edu-duration">2023 – 2027</div>
+            </div>
+          </div>  
         </div>
       </div>
     </div>

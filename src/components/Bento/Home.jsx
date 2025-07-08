@@ -1,14 +1,14 @@
 // src/pages/Home.jsx
 import { useState } from "react";
-import AchievementsModal from "../components/AchievementsModal";
-import { AnimatedTooltipPreview } from "../components/AnimatedToolTipPreview";
-import ProjectCard from "../components/ProjectCard";
-import ProfileCard from "../components/ProfileCard";
-import AboutCard from "../components/AboutCard";
-import ContactCard from "../components/ContactCard";
-import FooterCard from "../components/FooterCard";
+import AchievementsModal from "./AchievementsModal";
+import { AnimatedTooltipPreview } from "./AnimatedToolTipPreview";
+import ProjectCard from "./ProjectCard";
+import ProfileCard from "./ProfileCard";
+import AboutCard from "./AboutCard";
+import ContactCard from "./ContactCard";
+import FooterCard from "./FooterCard";
 
-import "../Styles/Home.css";
+import "./Styles/Home.css";
 
 const achievements = [
   {

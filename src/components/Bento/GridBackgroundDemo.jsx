@@ -1,4 +1,4 @@
-import "../Styles/Grid.css";
+import "./Styles/Grid.css";
 
 export function GridBackgroundDemo() {
   return (

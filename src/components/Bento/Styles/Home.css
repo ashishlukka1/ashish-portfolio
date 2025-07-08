@@ -72,7 +72,7 @@
     min-height: 120px;
     padding: 1rem 0.7rem;
   }
-  .profile-image {
+  .profile-image1 {
     width: 100px;
     position: relative;
     min-width: 180px;
@@ -90,8 +90,8 @@
   }
   .bento-one,
   .text-content,
-  .project-title,
-  .project-description,
+  .project-title1,
+  .project-description1,
   .tech-stack-title,
   .tech-icons-container,
   .edu-title,
@@ -110,6 +110,10 @@
     z-index: 10;
     position: static;
     top: unset;
+  }
+  .bento-card7{
+    align-items: center;
+    justify-content: center;
   }
 
   .footer {
@@ -143,7 +147,7 @@
     padding: 1rem 0.7rem;
   }
 
-  .profile-image {
+  .profile-image1 {
     width: 100px;
     position: relative;
     right: 160px;
@@ -163,8 +167,8 @@
   }
   .bento-one,
   .text-content,
-  .project-title,
-  .project-description,
+  .project-title1,
+  .project-description1,
   .tech-stack-title,
   .tech-icons-container,
   .edu-title,
@@ -189,7 +193,7 @@
 
 /* Make images and content scale down smoothly */
 .bento-card img,
-.profile-image {
+.profile-image1 {
   max-width: 100%;
   height: auto;
   object-fit: cover;
@@ -264,7 +268,7 @@
   align-items: center;
   margin-top: auto;
 }
-.profile-image {
+.profile-image1 {
   width: 190px;
   height: 100%;
   object-fit: cover;
@@ -296,13 +300,13 @@
   font-weight: 400;
   z-index: 2;
 }
-.project-card {
+.project-card1 {
   background-size: cover;
   background-position: center;
   position: relative;
   overflow: hidden;
 }
-.project-card::before {
+.project-card1::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -315,12 +319,12 @@
   color: white;
   text-align: left;
 }
-.project-title {
+.project-title1 {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 1rem;
 }
-.project-description {
+.project-description1 {
   font-size: 14px;
   font-weight: 300;
   color: #ffffffc0;
@@ -375,7 +379,7 @@
   list-style-type: disc;
   padding-left: 1rem;
 }
-.tech-stack {
+.tech-stack1 {
   margin: 1.5rem 1px;
 }
 .tech-stack-title {
@@ -478,11 +482,11 @@
   color: rgb(107, 107, 107);
   margin-bottom: 0.5rem;
 }
-.social-link a {
+.social-link1 a {
   text-decoration: none;
   color: var(--text-color);
 }
-.social-link a:hover {
+.social-link1 a:hover {
   text-decoration: underline;
 }
 .yup {

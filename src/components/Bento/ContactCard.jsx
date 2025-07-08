@@ -25,14 +25,14 @@ function ContactCard({ copied, handleCopy }) {
         <div className="socials mt-3">
           <div className="socials-text">Coding Profiles</div>
           <div className="content">
-            <div className="social-link mb-2">
+            <div className="social-link1 mb-2">
               <LinkPreview url="https://linktr.ee/ashishlukka">
                 Linktree
               </LinkPreview>
             </div>
           </div>
           <div className="socials-text">Socials</div>
-          <div className="social-link">
+          <div className="social-link1">
             <LinkPreview
               url="https://www.linkedin.com/in/ashish-lukka/"
               imageSrc="https://i.postimg.cc/HWNT4NTb/Screenshot-2025-07-02-130119.png"
@@ -41,12 +41,12 @@ function ContactCard({ copied, handleCopy }) {
               Linkedin
             </LinkPreview>
           </div>
-          <div className="social-link">
+          <div className="social-link1">
             <LinkPreview url="https://github.com/ashishlukka1">
               Github
             </LinkPreview>
           </div>
-          <div className="social-link">
+          <div className="social-link1">
             <LinkPreview
               url="https://open.spotify.com/user/31ghkpczqppipovjfocgs4zhxkue"
               imageSrc="https://i.postimg.cc/VsqFXxqV/Screenshot-2025-07-02-125834.png"
