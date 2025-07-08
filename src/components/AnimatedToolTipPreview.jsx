@@ -78,7 +78,7 @@ const AnimatedTooltip = ({ items }) => {
               width={56}
               src={item.image}
               alt={item.name}
-              className="relative h-14 w-14 rounded-full object-cover object-center transition duration-300 group-hover:z-30 group-hover:scale-110"
+              className="relative h-16 w-16 rounded-full object-cover object-center transition duration-300 group-hover:z-30 group-hover:scale-110"
               style={{
                 border: "1px solid rgba(255, 255, 255, 0.177)",
               }}
@@ -131,7 +131,7 @@ const people = [
 
 export function AnimatedTooltipPreview() {
   return (
-    <div className="flex flex-row items-center justify-center mb-10 w-full">
+    <div className="flex flex-row items-center justify-center w-full">
       <AnimatedTooltip items={people} />
     </div>
   );
