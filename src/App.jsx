@@ -6,6 +6,7 @@ import {
   Navigate,
   useLocation,
 } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react"; // ✅ Add this import
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -23,6 +24,9 @@ import ClickSpark from "../ReactBits/ClickSpark/ClickSpark";
 import { GridBackgroundDemo } from "./components/Bento/GridBackgroundDemo";
 import BentoHome from "./components/Bento/Home";
 
+// Assuming this was missing from your code
+import LinktreeHome from "./components/Linktree/LinktreeHome"; // ✅ Add if not already
+
 function LayoutOG({ children, isLoading }) {
   return (
     <ClickSpark
@@ -36,7 +40,6 @@ function LayoutOG({ children, isLoading }) {
         className="app-container font-poppins"
         style={{ position: "relative", minHeight: "100vh" }}
       >
-        {/* Loading Spinner */}
         {isLoading && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
             <div className="w-12 h-12 animate-spin">
@@ -122,16 +125,18 @@ function App() {
           </LayoutOG>
         }
       />
-
+      <Route path="/linktree" element={<LinktreeHome />} />
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );
 }
 
+// ✅ Add Analytics component here at the root level
 export default function WrappedApp() {
   return (
     <Router>
       <App />
+      <Analytics /> 
     </Router>
   );
 }
