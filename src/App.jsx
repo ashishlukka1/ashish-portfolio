@@ -24,8 +24,6 @@ import ClickSpark from "../ReactBits/ClickSpark/ClickSpark";
 import { GridBackgroundDemo } from "./components/Bento/GridBackgroundDemo";
 import BentoHome from "./components/Bento/Home";
 
-// Assuming this was missing from your code
-import LinktreeHome from "./components/Linktree/LinktreeHome"; // ✅ Add if not already
 
 function LayoutOG({ children, isLoading }) {
   return (
@@ -125,7 +123,7 @@ function App() {
           </LayoutOG>
         }
       />
-      <Route path="/linktree" element={<LinktreeHome />} />
+      {/* <Route path="/linktree" element={<LinktreeHome />} /> */}
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );
