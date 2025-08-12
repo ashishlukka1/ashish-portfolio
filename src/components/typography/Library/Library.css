@@ -1,0 +1,205 @@
+.dal-page {
+  min-height: 100vh;
+}
+
+/* Banner */
+.dal-banner {
+  background: #0A192F;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-img1 {
+  max-width: 350px;
+  height: auto;
+}
+
+.project-logo {
+  width: 150px;
+  margin-bottom: 1.5rem;
+}
+
+/* Content layout */
+.dal-content {
+  display: flex;
+  gap: 40px;
+  padding: 5rem 1.5rem 0 1.5rem;
+  align-items: flex-start;
+}
+
+/* Sidebar */
+.dal-sidebar {
+  flex: 1;
+  max-width: 300px;
+}
+
+.team-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.team-list li {
+  margin-bottom: 0.5rem;
+}
+
+.team-list a {
+  color: #8d8d8d;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.team-list a:hover {
+  text-decoration: underline;
+}
+
+/* Win section */
+.dal-win-section {
+  background: #fff7e6;
+  padding: 1.5rem;
+  margin: 1rem 0;
+}
+
+.dal-win-section p {
+  font-size: 1.05rem;
+  color: rgb(90, 96, 112);
+  margin-bottom: 1rem;
+}
+
+.dal-win-image {
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+/* Features intro text */
+.features-intro {
+  font-size: 1.05rem;
+  color: rgb(90, 96, 112);
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.dal-sidebar h4 {
+  font-size: 0.9rem;
+  color: #000;
+  font-weight: 550;
+  margin-top: 20px;
+}
+
+.dal-sidebar p {
+  font-size: 0.9rem;
+  color: #8d8d8d;
+  margin: 0 0 2rem 0;
+}
+
+/* Main section */
+.dal-main {
+  max-width: 700px;
+  font-family: "Inter", sans-serif;
+}
+
+.dal-main h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #000;
+  font-weight: 600;
+}
+
+.intro {
+  font-size: 1.1rem;
+  color: rgb(90, 96, 112);
+  line-height: 2;
+}
+
+.bold-text {
+  font-weight: 600;
+}
+
+.highlight {
+  background: #f5f7f9;
+  padding: 0.5rem;
+  color: rgb(90, 96, 112);
+  display: inline-block;
+  margin: 0.5rem 0 1rem 0;
+  font-weight: 400;
+  line-height: 2;
+  font-size: 1.1rem;
+}
+
+.ss {
+  margin: 0 auto 2rem auto;
+}
+
+.short-content {
+  font-size: 1.1rem;
+  color: rgb(66, 70, 81);
+  line-height: 2;
+  margin-bottom: 2rem;
+}
+
+.dal-projects {
+  font-size: 1.1rem;
+  line-height: 2;
+  margin-bottom: 1rem;
+  background: #f5f7f9;
+  padding: 0.5rem;
+}
+
+/* Image with caption */
+.dal-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.dal-image-wrapper img {
+  width: 100%;
+  height: auto;
+  max-width: 1200px; /* Set appropriate max-width */
+  object-fit: cover;
+  will-change: transform; /* Optimize for animations */
+  contain: content; /* Improve paint performance */
+  border: 2px solid #d4d4d4;
+}
+
+.dal-image-wrapper figcaption {
+  font-size: 1.1rem;
+  color: rgb(90, 96, 112);
+  margin: 0.5rem 2rem 2rem 2rem;
+  text-align: center;
+  max-width: 95%;
+}
+
+/* Images section */
+.dal-feature-images {
+  margin: auto;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .dal-content {
+    flex-direction: column;
+  }
+
+  .dal-sidebar {
+    max-width: 100%;
+  }
+
+  .dal-sidebar .project-logo {
+    display: none;
+  }
+
+  .dal-main h1 {
+    font-size: 2.2rem;
+  }
+
+  .dal-image-wrapper img {
+    width: 100%;
+  }
+}
