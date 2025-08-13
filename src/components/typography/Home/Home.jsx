@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Home.css";
 import { useNavigate } from "react-router-dom";
 
@@ -31,6 +31,18 @@ export default function Home() {
     navigate(`/${alt.replace(/\s+/g, "-").toLowerCase()}`);
   };
 
+  const BlurImage = ({ src, alt }) => {
+    const [loaded, setLoaded] = useState(false);
+    return (
+      <img
+        src={src}
+        alt={alt}
+        className={`blur-load ${loaded ? "loaded" : ""}`}
+        onLoad={() => setLoaded(true)}
+      />
+    );
+  };
+
   const renderImages = (images) =>
     images.map((img, index) => (
       <div
@@ -38,8 +50,8 @@ export default function Home() {
         className="image-wrapper"
         onClick={() => handleImageClick(img.alt)}
       >
-        <img src={img.src} alt={img.alt} />
-        <div className="">
+        <BlurImage src={img.src} alt={img.alt} />
+        <div>
           <span>{img.alt}</span>
         </div>
       </div>
@@ -53,7 +65,7 @@ export default function Home() {
           <div className="intro-section">
             <h1 className="intro-title">Ashish Lukka</h1>
             <p className="intro-subtitle">
-              Co-Founder of  {" "}
+              Co-Founder of{" "}
               <a
                 href="https://buildwithlumora.tech"
                 target="_blank"
@@ -61,7 +73,7 @@ export default function Home() {
               >
                 Lumora
               </a>
-              , and previously Intern at {" "}
+              , and previously Intern at{" "}
               <a
                 href="https://olivecrypto.com"
                 target="_blank"
