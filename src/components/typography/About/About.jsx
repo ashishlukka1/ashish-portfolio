@@ -31,9 +31,9 @@ function About() {
   ];
 
   const imageRow = [
-    "https://i.postimg.cc/SRX44fFc/Chat-GPT-Image-Mar-30-2025-03-50-35-PM.png",
-    "https://i.postimg.cc/Df5nXmy9/Chat-GPT-Image-Mar-31-2025-06-51-12-PM.png",
-    "https://i.postimg.cc/R0jQGMC9/Chat-GPT-Image-Mar-30-2025-01-53-45-PM.png",
+    "https://u.cubeupload.com/ashishl/fadChatGPTImageMar30202.png",
+    "https://u.cubeupload.com/ashishl/ChatGPTImageMar31202.png",
+    "https://u.cubeupload.com/ashishl/ChatGPTImageMar30202.png",
   ];
 
   const experience = [
@@ -103,7 +103,7 @@ function About() {
       {/* Image Row */}
       <div className="image-row">
         {imageRow.map((src, idx) => (
-          <img key={idx} src={src} alt={`Image ${idx + 1}`} className="row-image" />
+          <img key={idx} src={src} alt={`Image ${idx + 1}`} className="row-image fade-in-img" loading="lazy" onLoad={(e) => e.target.classList.add("loaded") }/>
         ))}
       </div>
 
@@ -166,7 +166,9 @@ function About() {
                   key={i}
                   src={src}
                   alt={`Experience ${i + 1}`}
-                  className="edu-image"
+                  className="edu-image fade-in-img"
+                  loading="lazy"
+                  onLoad={(e) => e.target.classList.add("loaded") }
                 />
               ))}
             </div>
@@ -188,7 +190,8 @@ function About() {
                 className={`education-images ${row.length === 1 ? "single" : "double"}`}
               >
                 {row.map((src, j) => (
-                  <img key={j} src={src} alt="Education" className="edu-image" />
+                  <img key={j} src={src} alt="Education" className="edu-image fade-in-img" loading="lazy" 
+                  onLoad={(e) => e.target.classList.add("loaded") }/>
                 ))}
               </div>
             ))}
