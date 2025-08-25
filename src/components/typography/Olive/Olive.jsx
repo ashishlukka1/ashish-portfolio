@@ -1,5 +1,6 @@
 import React from "react";
 import "./Olive.css";
+import ProjectNav from "../ProjectNav/ProjectNav";
 
 function Olive() {
   // Helper to render an image with lazy loading & caption
@@ -213,6 +214,7 @@ function Olive() {
           <ImageWithCaption key={idx} src={img.src} alt={img.alt} />
         ))}
       </div>
+      <ProjectNav />
     </div>
   );
 }

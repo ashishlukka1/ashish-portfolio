@@ -1,5 +1,6 @@
 import React from "react";
 import "./Library.css";
+import ProjectNav from "../ProjectNav/ProjectNav";
 
 function DigitalAcademicLibrary() {
   // Helper to render an image with lazy loading & caption (same as Olive)
@@ -300,6 +301,7 @@ function DigitalAcademicLibrary() {
           <ImageWithCaption key={idx} src={img.src} alt={img.alt} />
         ))}
       </div>
+      <ProjectNav />
     </div>
   );
 }

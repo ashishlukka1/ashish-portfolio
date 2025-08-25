@@ -1,5 +1,6 @@
 import React from "react";
 import "./Draft.css";
+import ProjectNav from "../ProjectNav/ProjectNav";
 
 function Draft() {
   // Reusable image with caption
@@ -188,6 +189,7 @@ function Draft() {
           <ImageWithCaption key={idx} src={img.src} alt={img.alt} />
         ))}
       </div>
+      <ProjectNav />
     </div>
   );
 }

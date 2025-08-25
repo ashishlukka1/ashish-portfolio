@@ -1,5 +1,6 @@
 import React from "react";
 import "./Lumora.css";
+import ProjectNav from "../ProjectNav/ProjectNav";
 
 function Lumora() {
   // Reusable image with caption
@@ -128,6 +129,7 @@ function Lumora() {
           <ImageWithCaption key={idx} src={img.src} alt={img.alt} />
         ))}
       </div>
+      <ProjectNav />
     </div>
   );
 }

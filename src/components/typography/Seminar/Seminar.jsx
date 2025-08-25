@@ -1,5 +1,6 @@
 import React from "react";
 import "./Seminar.css";
+import ProjectNav from "../ProjectNav/ProjectNav";
 
 function Seminar() {
   // Reusable image with caption
@@ -230,6 +231,7 @@ function Seminar() {
           <ImageWithCaption key={idx} src={img.src} alt={img.alt} />
         ))}
       </div>
+      <ProjectNav />
     </div>
   );
 }
