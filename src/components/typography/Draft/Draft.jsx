@@ -1,19 +1,17 @@
-import React, { useState, useEffect, useCallback, useMemo } from "react";
+import React from "react";
 import "./Draft.css";
 
 function Draft() {
-  const [imagesLoaded, setImagesLoaded] = useState(0);
-
   // Reusable image with caption
-  const ImageWithCaption = React.memo(({ src, alt }) => (
+  const ImageWithCaption = ({ src, alt }) => (
     <figure className="draft-image-wrapper">
       <img src={src} alt={alt} loading="lazy" decoding="async" />
       <figcaption>{alt}</figcaption>
     </figure>
-  ));
+  );
 
   // Sidebar info
-  const sidebarData = useMemo(() => [
+  const sidebarData = [
     { title: "Project", text: "Draft – Blog App" },
     {
       title: "Tech Stack Used",
@@ -21,33 +19,31 @@ function Draft() {
     },
     { title: "Duration", text: "2 weeks" },
     { title: "Role-based Access", text: "Admin, Author, Reader" },
-    { title: "Demo", link: "https://draft-blog-app.vercel.app/" },
+    { title: "Demo", link: "https://draft-blogapp.vercel.app" },
     { title: "GitHub", link: "https://github.com/ashishlukka1/draft-blogapp" },
-  ]);
+  ];
 
   // Feature images
-  const featureImages = useMemo(
-    () => [
-      {
-        src: "https://u.cubeupload.com/ashishl/a36landingpage.png",
-        alt: "Landing Page",
-      },
-      {
-        src: "https://u.cubeupload.com/ashishl/72dlogin.png",
-        alt: "Login Page",
-      },
-      {
-        src: "https://u.cubeupload.com/ashishl/1d3signup.png",
-        alt: "Sign Up Page",
-      },
-      {
-        src: "https://u.cubeupload.com/ashishl/selectrole.png",
-        alt: "Sign Up Role Selection",
-      },
-    ],
-    []
-  );
-  const userImages = useMemo(() => [
+  const featureImages = [
+    {
+      src: "https://u.cubeupload.com/ashishl/a36landingpage.png",
+      alt: "Landing Page",
+    },
+    {
+      src: "https://u.cubeupload.com/ashishl/72dlogin.png",
+      alt: "Login Page",
+    },
+    {
+      src: "https://u.cubeupload.com/ashishl/1d3signup.png",
+      alt: "Sign Up Page",
+    },
+    {
+      src: "https://u.cubeupload.com/ashishl/selectrole.png",
+      alt: "Sign Up Role Selection",
+    },
+  ];
+
+  const userImages = [
     {
       src: "https://u.cubeupload.com/ashishl/681userdash.png",
       alt: "User Dashboard (Display of all articles with search and filter)",
@@ -56,18 +52,20 @@ function Draft() {
       src: "https://u.cubeupload.com/ashishl/bloguser.png",
       alt: "View Article and comment on articles",
     },
-  ]);
-  const adminImages = useMemo(() => [
+  ];
+
+  const adminImages = [
     {
       src: "https://u.cubeupload.com/ashishl/admindash.png",
-      alt: "Admin Dashbord (Option to block the users)",
+      alt: "Admin Dashboard (Option to block the users)",
     },
     {
       src: "https://u.cubeupload.com/ashishl/blockedbyadmin.png",
       alt: "User Message when blocked by admin",
     },
-  ]);
-  const authorImages = useMemo(() => [
+  ];
+
+  const authorImages = [
     {
       src: "https://u.cubeupload.com/ashishl/authordash.png",
       alt: "Author Dashboard (All user features with Add Article feature)",
@@ -84,36 +82,7 @@ function Draft() {
       src: "https://u.cubeupload.com/ashishl/editarticleform.png",
       alt: "Edit published articles",
     },
-  ]);
-
-  const totalImages = featureImages.length;
-
-  // Preload images
-  const preloadImages = useCallback(() => {
-    featureImages.forEach((img) => {
-      const image = new Image();
-      image.src = img.src;
-      image.onload = () => setImagesLoaded((prev) => prev + 1);
-    });
-  }, [featureImages]);
-
-  useEffect(() => {
-    if ("requestIdleCallback" in window) {
-      requestIdleCallback(preloadImages);
-    } else {
-      preloadImages();
-    }
-  }, [preloadImages]);
-
-  const loadingProgress = (imagesLoaded / totalImages) * 100;
-
-  if (loadingProgress < 100) {
-    return (
-      <div className="loading-screen">
-        <div className="loading-progress">{Math.round(loadingProgress)}%</div>
-      </div>
-    );
-  }
+  ];
 
   return (
     <div className="draft-page">
@@ -149,7 +118,7 @@ function Draft() {
 
         {/* Main Section */}
         <div className="draft-main">
-          <h1>Draft – Blog Application</h1>
+          <h1>Draft.</h1>
           <p className="intro">
             Draft is a modern{" "}
             <span className="bold-text">full-stack blog application</span> where
@@ -178,17 +147,16 @@ function Draft() {
         </div>
       </div>
 
-      {/* Images */}
+      {/* Feature Images */}
       <div className="draft-feature-images">
         {featureImages.map((img, idx) => (
           <ImageWithCaption key={idx} src={img.src} alt={img.alt} />
         ))}
       </div>
-      <div
-        className="short-content olive-main ss"
-        style={{ maxWidth: "700px" }}
-      >
-        Here’s a look at the <span className="bold-text">User</span> journey —
+
+      {/* User Journey */}
+      <div className="short-content olive-main ss" style={{ maxWidth: "700px" }}>
+        Here’s a look at the <span className="bold-text">User</span> journey — 
         from signing in to browsing blog posts, reading articles, and engaging
         with the community.
       </div>
@@ -197,11 +165,10 @@ function Draft() {
           <ImageWithCaption key={idx} src={img.src} alt={img.alt} />
         ))}
       </div>
-      <div
-        className="short-content olive-main ss"
-        style={{ maxWidth: "700px" }}
-      >
-        Here’s a look at the <span className="bold-text">Author</span> journey —
+
+      {/* Author Journey */}
+      <div className="short-content olive-main ss" style={{ maxWidth: "700px" }}>
+        Here’s a look at the <span className="bold-text">Author</span> journey — 
         from logging in to creating, editing, and managing blog posts.
       </div>
       <div className="dal-feature-images">
@@ -209,15 +176,13 @@ function Draft() {
           <ImageWithCaption key={idx} src={img.src} alt={img.alt} />
         ))}
       </div>
-      <div
-        className="short-content olive-main ss"
-        style={{ maxWidth: "700px" }}
-      >
-        Here’s a look at the <span className="bold-text">Admin</span> journey —
+
+      {/* Admin Journey */}
+      <div className="short-content olive-main ss" style={{ maxWidth: "700px" }}>
+        Here’s a look at the <span className="bold-text">Admin</span> journey — 
         from accessing the dashboard to managing users, and ensuring the smooth
         operation of the platform.
       </div>
-
       <div className="dal-feature-images">
         {adminImages.map((img, idx) => (
           <ImageWithCaption key={idx} src={img.src} alt={img.alt} />

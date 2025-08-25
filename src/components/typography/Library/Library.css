@@ -4,7 +4,7 @@
 
 /* Banner */
 .dal-banner {
-  background: #0A192F;
+  background: #0a192f;
   height: 350px;
   display: flex;
   justify-content: center;
@@ -132,12 +132,7 @@
   margin: 0 auto 2rem auto;
 }
 
-.short-content {
-  font-size: 1.1rem;
-  color: rgb(66, 70, 81);
-  line-height: 2;
-  margin-bottom: 2rem;
-}
+
 
 .dal-projects {
   font-size: 1.1rem;
@@ -181,10 +176,10 @@
   flex-direction: column;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments */        
 @media (max-width: 768px) {
   .dal-content {
-    flex-direction: column;
+    flex-direction: column; 
   }
 
   .dal-sidebar {
@@ -201,5 +196,46 @@
 
   .dal-image-wrapper img {
     width: 100%;
+  }
+}
+
+.axd-loading-screen {
+  position: fixed;  
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background: white;
+  z-index: 99999; /* Ensures it covers navbar and everything else */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.8s ease-out, visibility 0.8s ease-out;
+}
+
+/* When loading is complete */
+.axd-loading-screen.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Centered .axD logo text */
+.axd-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  font-family: "Inter", sans-serif;
+  animation: fadePulse 1.5s ease-in-out infinite;
+}
+
+/* Logo subtle fade animation */
+@keyframes fadePulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
   }
 }

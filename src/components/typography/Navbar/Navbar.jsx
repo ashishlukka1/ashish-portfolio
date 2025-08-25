@@ -8,16 +8,30 @@ const Navbar = () => {
   const isOlivePage = location.pathname === "/olive-crypto-systems";
   const isLibraryPage = location.pathname === "/digital-academic-library";
   const isDraftBlogApp = location.pathname === "/draft-blogapp";
+  const isSeminarPage = location.pathname === "/campus-hall-scheduler";
+  const isLumoraPage = location.pathname === "/lumora";
 
   useEffect(() => {
     const handleScroll = () => {
-      if (isOlivePage || isLibraryPage || isDraftBlogApp) {
-        const bannerSelector = isOlivePage 
-          ? ".olive-banner" 
-          : isLibraryPage 
+      if (
+        isOlivePage ||
+        isLibraryPage ||
+        isDraftBlogApp ||
+        isSeminarPage ||
+        isLumoraPage
+      ) {
+        const bannerSelector = isOlivePage
+          ? ".olive-banner"
+          : isLibraryPage
           ? ".dal-banner"
-          : ".draft-banner";
-        const bannerHeight = document.querySelector(bannerSelector)?.offsetHeight+50 || 0;
+          : isDraftBlogApp
+          ? ".draft-banner"
+          : isSeminarPage
+          ? ".seminar-banner"
+          : ".lumora-banner";
+
+        const bannerHeight =
+          document.querySelector(bannerSelector)?.offsetHeight + 50 || 0;
         setScrolled(window.scrollY > bannerHeight - 60);
       } else {
         setScrolled(window.scrollY > 50);
@@ -25,7 +39,7 @@ const Navbar = () => {
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isOlivePage, isLibraryPage, isDraftBlogApp]);
+  }, [isOlivePage, isLibraryPage, isDraftBlogApp, isSeminarPage, isLumoraPage]);
 
   return (
     <nav
@@ -33,6 +47,8 @@ const Navbar = () => {
         isOlivePage && !scrolled ? "olive-theme" : ""
       } ${isLibraryPage && !scrolled ? "library-theme" : ""} ${
         isDraftBlogApp && !scrolled ? "draft-theme" : ""
+      } ${isSeminarPage && !scrolled ? "seminar-theme" : ""} ${
+        isLumoraPage && !scrolled ? "lumora-theme" : ""
       }`}
     >
       <div className="navbar-content">
@@ -41,12 +57,18 @@ const Navbar = () => {
         </NavLink>
         <ul className="nav-links1">
           <li>
-            <NavLink to="/work" className={({ isActive }) => (isActive ? "active" : "")}>
+            <NavLink
+              to="/work"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
               WORK
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" className={({ isActive }) => (isActive ? "active" : "")}>
+            <NavLink
+              to="/about"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
               ABOUT
             </NavLink>
           </li>

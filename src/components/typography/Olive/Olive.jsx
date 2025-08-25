@@ -135,7 +135,7 @@ function Olive() {
             <img src={twoImages[0].src} alt={twoImages[0].alt} loading="lazy" />
           </div>
 
-          <p className="short-content">
+          <p className="short-content mt-3">
             The daily morning meetings were a new experience — watching 20
             people share yesterday’s work and tomorrow’s plans was fascinating.
             Initially nerve-wracking, they soon became my favorite part of the

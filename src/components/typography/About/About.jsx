@@ -94,7 +94,7 @@ function About() {
           .
         </p>
         <p>
-          I create  , responsive
+          I create, responsive
           websites with clean design and useful features, always exploring ways
           to make technology easier and more engaging.
         </p>

@@ -3,6 +3,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   padding: 40px;
+  min-height: 100vh;
 }
 
 .work-image-wrapper {

@@ -122,3 +122,43 @@
 .navbarxu.draft-theme .nav-links1 li a.active {
   color:  #e9f0ee;
 }
+
+
+/* Seminar Theme */
+.navbarxu.seminar-theme {
+  background: #F5F5F7
+}
+
+.navbarxu.seminar-theme .logo-text {
+  opacity: 1;
+  color: #bebebe;
+}
+
+.navbarxu.seminar-theme .nav-links1 li a {
+  color: #b6b6b6;
+}
+
+.navbarxu.seminar-theme .nav-links1 li a:hover,
+.navbarxu.seminar-theme .nav-links1 li a.active {
+  color:  #686b6a;
+}
+
+
+/* Lumora Theme */
+.navbarxu.lumora-theme {
+  background: #121B25;
+}
+
+.navbarxu.lumora-theme .logo-text {
+  opacity: 1;
+  color: #bebebe;
+}
+
+.navbarxu.lumora-theme .nav-links1 li a {
+  color: #b6b6b6;
+}
+
+.navbarxu.lumora-theme .nav-links1 li a:hover,
+.navbarxu.lumora-theme .nav-links1 li a.active {
+  color:  #686b6a;
+}

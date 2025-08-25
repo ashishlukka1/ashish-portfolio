@@ -1,9 +1,237 @@
-import React from 'react'
+import React from "react";
+import "./Seminar.css";
 
 function Seminar() {
+  // Reusable image with caption
+  const ImageWithCaption = ({ src, alt }) => (
+    <figure className="seminar-image-wrapper">
+      <img src={src} alt={alt} loading="lazy" decoding="async" />
+      <figcaption>{alt}</figcaption>
+    </figure>
+  );
+
+  // Sidebar info
+  const sidebarData = [
+    { title: "Project", text: "Seminar Hall Booking System" },
+    {
+      title: "Tech Stack Used",
+      text: "React.js, Node.js, Express.js, MongoDB, EmailJS, Firebase",
+    },
+    { title: "Duration", text: "3 weeks" },
+    {
+      title: "Role-based Access",
+      text: "Clubs, Director(Admin), Users(Faculties)",
+    },
+    { title: "Demo", link: "https://vnrvjiet-seminar-hall.vercel.app" },
+    {
+      title: "GitHub",
+      link: "https://github.com/Janjirala-Srikar/Seminar_Hall",
+    },
+  ];
+
+  // Feature images
+  const featureImages = [
+    {
+      src: "https://u.cubeupload.com/ashishl/landing.png",
+      alt: "Landing Page",
+    },
+    {
+      src: "https://u.cubeupload.com/ashishl/loginpage.png",
+      alt: "Login Page for all users",
+    },
+    {
+      src: "https://u.cubeupload.com/ashishl/forgotpassword.png",
+      alt: "Forgot Password Page",
+    },
+  ];
+
+  const facultyImages = [
+    {
+      src: "https://u.cubeupload.com/ashishl/userdash1.png",
+      alt: "User – Dashboard (Display of all seminar halls)",
+    },
+    {
+      src: "https://u.cubeupload.com/ashishl/choosedateuser.png",
+      alt: "Detailed view of a seminar hall (Choose date and time slot)",
+    },
+    {
+      src: "https://u.cubeupload.com/ashishl/timeslotusredash.png",
+      alt: "Fill the details and time slot to book the hall",
+    },
+    {
+      src: "https://u.cubeupload.com/ashishl/usermanagebookings.png",
+      alt: "User – Manage Bookings (View, cancel bookings)",
+    },
+    {
+      src: "https://u.cubeupload.com/ashishl/usersettings.png",
+      alt: "User – Settings (Update profile and password)",
+    },
+  ];
+
+  const clubImages = [
+    {
+      src: "https://u.cubeupload.com/ashishl/clubregistration.png",
+      alt: "Club – Registration Page",
+    },
+    {
+      src: "https://u.cubeupload.com/ashishl/clubreg1.png",
+    },
+    {
+      src: "https://u.cubeupload.com/ashishl/clubreg2.png",
+    },
+    {
+      src: "https://u.cubeupload.com/ashishl/clubreg3.png",
+      alt: "Club registration form",
+    },
+  ];
+
+  const adminImages = [
+    {
+      src: "https://u.cubeupload.com/ashishl/b2dadmindash.png",
+      alt: "Admin Dashboard – Overview of bookings and halls",
+    },
+    {
+      src: "https://u.cubeupload.com/ashishl/adminbookingcalender.png",
+      alt: "Calendar view of all bookings with option to filter based on the hall names",
+    },
+    {
+      src: "https://u.cubeupload.com/ashishl/adminbookingreq.png",
+      alt: "Seminar hall booking requests with options to approve/reject",
+    },
+    {
+      src: "https://u.cubeupload.com/ashishl/adminclubreq.png",
+      alt: "Club registration requests with options to approve/reject",
+    },
+    {
+      src: "https://u.cubeupload.com/ashishl/adminclubreq.png",
+      alt: "Club registration requests with options to approve/reject",
+    },
+  ];
+
   return (
-    <div className='text-dark'>Seminar</div>
-  )
+    <div className="seminar-page">
+      {/* Banner */}
+      <div className="seminar-banner">
+        <img
+          src="https://cdn.brandfetch.io/idD_5AfN3y/w/329/h/303/theme/light/logo.png?c=1dxbfHSJFAPEGdCLU4o5B"
+          alt="Seminar Hall Booking Banner"
+          className="banner-img3"
+          loading="lazy"
+        />
+      </div>
+
+      {/* Content */}
+      <div className="seminar-content container">
+        {/* Sidebar */}
+        <div className="seminar-sidebar">
+          {sidebarData.map((item, idx) => (
+            <React.Fragment key={idx}>
+              <h4>{item.title}</h4>
+              {item.link ? (
+                <p>
+                  <a href={item.link} target="_blank" rel="noopener noreferrer">
+                    {item.link}
+                  </a>
+                </p>
+              ) : (
+                <p>{item.text}</p>
+              )}
+            </React.Fragment>
+          ))}
+        </div>
+
+        {/* Main Section */}
+        <div className="seminar-main">
+          <h1>Campus Hall Scheduler. </h1>
+          <p className="intro">
+            A{" "}
+            <span className="bold-text">
+              real-time seminar hall booking system{" "}
+            </span>
+            designed for faculties, clubs, and administrators to streamline the
+            process of booking, approving, and managing seminar halls.
+          </p>
+
+          <p className="highlight">
+            Developed with the <span className="bold-text">MERN stack</span> and
+            integrated with <span className="bold-text">EmailJS</span> for
+            instant booking notifications.
+          </p>
+
+          <div className="bold-text seminar-projects">Key Features:</div>
+          <ul className="short-content">
+            <li>
+              Role-based access (Director, Transport Manager, Faculties, Clubs).
+            </li>
+            <li>Real-time seminar hall booking calendar.</li>
+            <li>Email notifications for approvals/rejections.</li>
+            <li>Admin dashboards for approval and hall management.</li>
+          </ul>
+          <p className="features-intro mb-5">
+            Below are some highlights and screenshots from the system.
+          </p>
+        </div>
+      </div>
+
+      {/* Feature Images */}
+      <div className="seminar-feature-images">
+        {featureImages.map((img, idx) => (
+          <ImageWithCaption key={idx} src={img.src} alt={img.alt} />
+        ))}
+      </div>
+
+      {/* Club Journey */}
+      <div
+        className="short-content olive-main ss"
+        style={{ maxWidth: "700px" }}
+      >
+        This flow shows how a <span className="bold-text">club </span> submits
+        its registration details on the platform. Once approved by the admin,
+        the <span className="bold-text">login credentials</span> are shared with
+        the club to access the booking system.
+      </div>
+      <div className="dal-feature-images">
+        {clubImages.map((img, idx) => (
+          <ImageWithCaption key={idx} src={img.src} alt={img.alt} />
+        ))}
+      </div>
+
+      {/* Faculty Journey */}
+      <div
+        className="short-content olive-main ss"
+        style={{ maxWidth: "700px" }}
+      >
+        The user flow covers{" "}
+        <span className="bold-text">booking a seminar hall</span>, managing{" "}
+        <span className="bold-text">existing reservations</span>, and updating
+        profile details.
+      </div>
+      <div className="dal-feature-images">
+        {facultyImages.map((img, idx) => (
+          <ImageWithCaption key={idx} src={img.src} alt={img.alt} />
+        ))}
+      </div>
+
+      {/* Admin Journey */}
+      <div
+        className="short-content olive-main ss"
+        style={{ maxWidth: "700px" }}
+      >
+        The <span className="bold-text">admin</span> flow includes viewing the
+        booking calendar for an overview of hall usage, handling{" "}
+        <span className="bold-text">booking requests</span>, and{" "}
+        <span className="bold-text">
+          approving or rejecting club registration requests
+        </span>
+        .
+      </div>
+      <div className="dal-feature-images">
+        {adminImages.map((img, idx) => (
+          <ImageWithCaption key={idx} src={img.src} alt={img.alt} />
+        ))}
+      </div>
+    </div>
+  );
 }
 
-export default Seminar
+export default Seminar;
