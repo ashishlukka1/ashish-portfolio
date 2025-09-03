@@ -38,7 +38,7 @@ function Olive() {
     { src: "https://u.cubeupload.com/ashishl/mycoursesuser.png", alt: "My Courses" },
     { src: "https://u.cubeupload.com/ashishl/coursedetailsandunit.png", alt: "Course Details and Units Content" },
     { src: "https://u.cubeupload.com/ashishl/assessment.png", alt: "Assessment Page (For each Unit, Chossen randomly from the sets of assessments available for that unit)" },
-    { src: "https://u.cubeupload.com/ashishl/assginmentblocked.png", alt: "Assessment Blocked (If the user has switches tab 3 times during the assessment)" },
+    { src: "https://u.cubeupload.com/ashishl/assginmentblocked.png", alt: "Assessment Blocked (If the user switches the tab 3 times during the assessment)" },
     { src: "https://u.cubeupload.com/ashishl/assignmentreview.png", alt: "Progress Tracking and Assignment Review (For each Unit)" },
     { src: "https://u.cubeupload.com/ashishl/coursedetailsandunit.png", alt: "Certificate Generation (After completing all units and assessments)" },
     { src: "https://u.cubeupload.com/ashishl/mycertiificatesuser.png", alt: "My Certificates (User can download the certificate)" },
