@@ -39,7 +39,7 @@ export default function Work() {
     <>
       {loading && (
         <div className={`loader ${!loading ? "fade-out" : ""}`}>
-          <span className="loader-text">.axD</span>
+          <span className="loader-text">  Hold on now Brodigy... :)</span>
         </div>
       )}
 

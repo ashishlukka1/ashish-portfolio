@@ -1,5 +1,4 @@
 .olive-page {
-  font-family: Arial, sans-serif;
   min-height: 200vh;
 }
 
@@ -18,6 +17,7 @@
 }
 
 .company-logo {
+  
   width: 150px;
   margin-bottom: 1.5rem;
 }
@@ -37,6 +37,7 @@
 }
 
 .olive-sidebar h4 {
+  font-family: "Acron-Regular";
   font-size: 0.9rem;
   color: #000000;
   font-weight: 550;
@@ -44,6 +45,7 @@
 }
 
 .olive-sidebar p {
+  font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
   color: #8d8d8d;
   margin: 0 0 2rem 0;
@@ -52,10 +54,11 @@
 /* Main section */
 .olive-main {
   max-width: 700px;
-  font-family: "Inter", sans-serif;
+font-family: "Open Sans", sans-serif;
 }
 
 .olive-main h1 {
+    font-family: "Acron";
   font-size: 3rem;
   margin-bottom: 20px;
   color: rgb(0, 0, 0);
@@ -97,9 +100,10 @@
 }
 
 .olive-image-wrapper figcaption {
+  font-family: "Open Sans", sans-serif;
   font-size: 1.1rem;
   color: rgb(90, 96, 112);
-  margin: 0.5rem 2rem 2rem 2rem;
+  margin: 0.5rem 2rem 1rem 2rem;
   text-align: center;
   max-width: 95%;
 }

@@ -30,6 +30,7 @@
 }
 
 .seminar-sidebar h4 {
+    font-family: "Acron-Regular";
   font-size: 0.9rem;
   color: #000;
   font-weight: 550;
@@ -37,6 +38,7 @@
 }
 
 .seminar-sidebar p {
+  font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
   color: #8d8d8d;
   margin-bottom: 2rem;
@@ -45,10 +47,11 @@
 /* Main */
 .seminar-main {
   max-width: 700px;
-  font-family: "Inter", sans-serif;
+font-family: "Open Sans", sans-serif;
 }
 
 .seminar-main h1 {
+    font-family: "Acron-Regular";
   font-size: 3rem;
   margin-bottom: 20px;
   color: #000;
@@ -97,6 +100,7 @@
 }
 
 .seminar-image-wrapper figcaption {
+    font-family: "Open Sans", sans-serif;
   font-size: 1.1rem;
   color: rgb(90, 96, 112);
   margin: 0.5rem 2rem 2rem 2rem;

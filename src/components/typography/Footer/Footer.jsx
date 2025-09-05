@@ -32,7 +32,7 @@ const Footer = () => {
           <FaGithub />
         </a>
         <a
-          href="https://linktr.ee/ashishlukka"
+          href="https://bio.site/ashishlukka"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -2,17 +2,18 @@
   max-width: 700px;
   margin: 0 auto;
   padding: 4rem 2rem;
-  font-family: "Inter", sans-serif;
 }
 
 .about-title {
+  font-family: "Acron-light";
   font-size: 4.5rem;
   font-weight: 600;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   color: black;
 }
 
 .intro-text p {
+  font-family: "Open Sans", sans-serif;
   font-size: 1.1rem;
   line-height: 1.6;
   color: #666;
@@ -46,6 +47,7 @@
 }
 
 .tagline {
+  font-family: "Open Sans", sans-serif;
   font-size: 1.1rem;
   color: #666;
   font-weight: 400;
@@ -64,6 +66,7 @@
 }
 
 .section-title1 {
+  font-family: "Acron-light";
   font-size: 1.7rem;
   margin: 2rem 0 1rem 0;
   color: #313131;
@@ -71,6 +74,7 @@
 }
 
 .tech-description p {
+  font-family: "Open Sans", sans-serif;
   font-size: 1.1rem;
   line-height: 1.6;
   color: #555;
@@ -98,6 +102,7 @@
 }
 
 .tech-item span {
+  font-family: "Open Sans", sans-serif;
   margin-top: 0.5rem;
   font-size: 0.9rem;
   color: #444;
@@ -117,10 +122,11 @@
 }
 
 .experience-section h2 {
+  font-family: "Acron-light";
   font-size: 1.7rem;
   margin: 2rem 0 1rem 0;
   color: #313131;
-  font-weight: 700;
+  font-weight: bolder;
 }
 
 .experience-item {
@@ -128,6 +134,7 @@
 }
 
 .experience-item h3 {
+  font-family: "Acron-light";
   font-size: 1.4rem;
   color: #333;
   margin-bottom: 0.5rem;
@@ -135,12 +142,14 @@
 }
 
 .idate {
+  font-family: "Acron-light";
   font-size: 0.9rem;
   color: #888;
   margin-bottom: 1rem;
 }
 
 .experience-item p {
+  font-family: "Open Sans", sans-serif;
   font-size: 1.1rem;
   line-height: 1.6;
   color: #555;
@@ -163,6 +172,7 @@
 }
 
 .education-section h2 {
+  font-family: "Acron-light";
   font-size: 1.7rem;
   margin: 1rem 0 1rem 0;
   color: #313131;
@@ -174,6 +184,7 @@
 }
 
 .education-item h3 {
+  font-family: "Acron-light";
   font-size: 1.4rem;
   color: #333;
   margin-bottom: 0.5rem;
@@ -181,6 +192,7 @@
 }
 
 .education-item p {
+  font-family: "Open Sans", sans-serif;
   font-size: 1.1rem;
   line-height: 1.6;
   color: #555;
@@ -211,6 +223,7 @@
 }
 
 .friends-section h2 {
+  font-family: "Acron-light";
   font-size: 1.7rem;
   margin: 2rem 0 1rem 0;
   color: #313131;
@@ -233,12 +246,14 @@
 }
 
 .friend-name {
+  font-family: "Open Sans", sans-serif;
   font-size: 1.1rem;
   font-weight: 500;
   color: #333;
 }
 
 .friend-item a {
+  font-family: "Open Sans", sans-serif;
   color: #0077b5;
   font-weight: 500;
   text-decoration: none;
@@ -252,6 +267,9 @@
 @media (max-width: 600px) {
   .about-title {
     font-size: 2rem;
+  }
+  .intro-text p {
+    font-size: 1.1rem;
   }
 
   .tagline {
@@ -279,7 +297,6 @@
     grid-template-columns: 1fr;
   }
 }
-
 
 .fade-in-img {
   opacity: 0;
