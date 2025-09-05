@@ -53,7 +53,7 @@ const Navbar = () => {
     >
       <div className="navbar-content">
         <NavLink to="/" className="logo-text">
-            
+            .axD
         </NavLink>
         <ul className="nav-links1">
           <li>
