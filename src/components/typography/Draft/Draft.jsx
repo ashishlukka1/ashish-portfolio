@@ -17,6 +17,8 @@ import editArticleAuthor from "../../../assets/draft/edit article author.webp";
 import editArticle from "../../../assets/draft/edit article.webp";
 import editArticleForm from "../../../assets/draft/edit article form.webp";
 
+import banner from "../../../assets/draft/banner33.webp";
+
 
 function Draft() {
   // Reusable image with caption
@@ -76,7 +78,7 @@ const authorImages = [
       {/* Banner */}
       <div className="draft-banner">
         <img
-          src="https://u.cubeupload.com/ashishl/banner33.png"
+          src={banner}
           alt="Draft Blog App Banner"
           className="banner-img2"
           loading="lazy"

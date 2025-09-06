@@ -25,6 +25,7 @@ import joinavailabeorcreate from "../../../assets/library/join availabe or creat
 import createanewchatroom2 from "../../../assets/library/create a new chat room 2.webp";
 import chatroom from "../../../assets/library/chat room.webp";
 import chatroommoderation from "../../../assets/library/chat room moderation.webp";
+import banner from "../../../assets/library/digital-banner.webp";
 
 
 
@@ -117,7 +118,7 @@ const studentImages = [
       {/* Banner */}
       <div className="dal-banner">
         <img
-          src="https://u.cubeupload.com/ashishl/digitalbanner.png"
+          src={banner}
           alt="Digital Academic Library Banner"
           className="banner-img1"
           loading="lazy"
