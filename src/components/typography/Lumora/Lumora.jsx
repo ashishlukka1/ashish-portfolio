@@ -2,6 +2,13 @@ import React from "react";
 import "./Lumora.css";
 import ProjectNav from "../ProjectNav/ProjectNav";
 
+import landingPage from "../../../assets/lumora/landing page.webp";
+import login from "../../../assets/lumora/login.webp";
+import content from "../../../assets/lumora/content.webp";
+import watch from "../../../assets/lumora/watch.webp";
+import logo from "../../../assets/lumora/logo.webp";
+
+
 function Lumora() {
   // Reusable image with caption
   const ImageWithCaption = ({ src, alt }) => (
@@ -31,31 +38,30 @@ function Lumora() {
   ];
 
   // Feature images
-  const featureImages = [
-    {
-      src: "https://u.cubeupload.com/ashishl/cb3landingpage.png",
-      alt: "Landing Page – Lumora",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/77login.png",
-      alt: "Login Page with Clerk authentication",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/content.png",
-      alt: "Lecture content organized by modules",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/watch.png",
-      alt: "Video lecture playback interface",
-    },
-  ];
-
+const featureImages = [
+  {
+    src: landingPage,
+    alt: "Landing Page – Lumora",
+  },
+  {
+    src: login,
+    alt: "Login Page with Clerk authentication",
+  },
+  {
+    src: content,
+    alt: "Lecture content organized by modules",
+  },
+  {
+    src: watch,
+    alt: "Video lecture playback interface",
+  },
+];
   return (
     <div className="lumora-page">
       {/* Banner */}
       <div className="lumora-banner">
         <img
-          src="https://u.cubeupload.com/ashishl/cb3landingpage.png"
+          src={logo}
           alt="Lumora Banner"
           className="banner-img4"
           loading="lazy"

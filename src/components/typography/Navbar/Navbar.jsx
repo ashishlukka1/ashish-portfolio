@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
+import { TiSpiral } from "react-icons/ti";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -53,7 +54,7 @@ const Navbar = () => {
     >
       <div className="navbar-content">
         <NavLink to="/" className="logo-text">
-            .axD
+            <TiSpiral  size={35} color="grey"/>
         </NavLink>
         <ul className="nav-links1">
           <li>

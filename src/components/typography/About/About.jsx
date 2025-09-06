@@ -15,25 +15,34 @@ import {
   SiPostman,
   SiMysql,
 } from "react-icons/si";
+import image1 from "../../../assets/about/image1.webp";
+import image2 from "../../../assets/about/image2.webp";
+import image3 from "../../../assets/about/image3.webp";
+import twitch from "../../../assets/about/twitch.webp";
+import ifeelgood from "../../../assets/about/ifeelgood.webp";
+import webalchemy from "../../../assets/about/webalchemy.webp";
+import webathon from "../../../assets/about/webathon.webp";
+import technovista from "../../../assets/about/technovista.webp";
+import LogoLoop from "../../../../ReactBits/LogoLoop/LogoLoop";
 
 function About() {
-  const techIcons = [
-    { name: "React", icon: <FaReact color="#61DBFB" size={40} /> },
-    { name: "Node.js", icon: <FaNodeJs color="#3C873A" size={40} /> },
-    { name: "Express", icon: <SiExpress color="#000" size={40} /> },
-    { name: "MongoDB", icon: <SiMongodb color="#4DB33D" size={50} /> },
-    { name: "Java", icon: <FaJava color="#007396" size={40} /> },
-    { name: "Python", icon: <FaPython color="#3776AB" size={40} /> },
-    { name: "JavaScript", icon: <FaJs color="#F7DF1E" size={40} /> },
-    { name: "SQL", icon: <SiMysql color="#00758F" size={40} /> },
-    { name: "Notion", icon: <SiNotion color="#000" size={40} /> },
-    { name: "Postman", icon: <SiPostman color="#FF6C37" size={40} /> },
+  const techLogos = [
+    { node: <FaReact color="#61DBFB" size={48} />, title: "React" },
+    { node: <FaNodeJs color="#3C873A" size={48} />, title: "Node.js" },
+    { node: <SiExpress color="#000" size={48} />, title: "Express" },
+    { node: <SiMongodb color="#4DB33D" size={48} />, title: "MongoDB" },
+    { node: <FaJava color="#007396" size={48} />, title: "Java" },
+    { node: <FaPython color="#3776AB" size={48} />, title: "Python" },
+    { node: <FaJs color="#F7DF1E" size={48} />, title: "JavaScript" },
+    { node: <SiMysql color="#00758F" size={48} />, title: "MySQL" },
+    { node: <SiNotion color="#000" size={48} />, title: "Notion" },
+    { node: <SiPostman color="#FF6C37" size={48} />, title: "Postman" },
   ];
 
   const imageRow = [
-    "https://u.cubeupload.com/ashishl/fadChatGPTImageMar30202.png",
-    "https://u.cubeupload.com/ashishl/ChatGPTImageMar31202.png",
-    "https://u.cubeupload.com/ashishl/ChatGPTImageMar30202.png",
+    image1,
+    image2,
+    image3,
   ];
 
   const experience = [
@@ -45,8 +54,7 @@ function About() {
         "Integrated skill assessments, progress tracking, certificates, and maintained audit-ready compliance logs.",
       ],
       images: [
-        // "https://u.cubeupload.com/ashishl/Snapchat322691115.jpg",
-        "https://u.cubeupload.com/ashishl/Snapchat1730730912.jpg",
+        ifeelgood,
       ],
     },
   ];
@@ -57,22 +65,37 @@ function About() {
       date: "B.Tech in Information Technology – CGPA: 9.08 (2023–2027)",
       desc: "Engaged in technical projects, hackathons, and leadership activities.",
       images: [
-        ["https://u.cubeupload.com/ashishl/1744132148860.jpg"],
+        [webathon],
         [
-          "https://i.postimg.cc/VLy6wzML/Web-Alchemy-Winner-Certificate.png",
-          "https://i.postimg.cc/FHXZbMzF/Ashish-Lukka-3.png",
+          webalchemy,
+          technovista,
         ],
       ],
     },
   ];
 
   const friends = [
-    { name: "Srikar Janjirala", link: "https://www.linkedin.com/in/srikar-janjirala/" },
-    { name: "Swaroop Mallidi", link: "https://www.linkedin.com/in/swaroop-mallidi/" },
-    { name: "Shaik Afzal Elahi", link: "https://www.linkedin.com/in/shaik-afzal-elahi/" },
-    { name: "Rahul Aligeti", link: "https://www.linkedin.com/in/rahul-aligeti-1ab6ab308/" },
+    {
+      name: "Srikar Janjirala",
+      link: "https://www.linkedin.com/in/srikar-janjirala/",
+    },
+    {
+      name: "Swaroop Mallidi",
+      link: "https://www.linkedin.com/in/swaroop-mallidi/",
+    },
+    {
+      name: "Shaik Afzal Elahi",
+      link: "https://www.linkedin.com/in/shaik-afzal-elahi/",
+    },
+    {
+      name: "Rahul Aligeti",
+      link: "https://www.linkedin.com/in/rahul-aligeti-1ab6ab308/",
+    },
     { name: "Om Kasar", link: "https://www.linkedin.com/in/omkasar27/" },
-    { name: "Abhinav Cheruku", link: "https://www.linkedin.com/in/abhinav-cheruku-46a224304/" },
+    {
+      name: "Abhinav Cheruku",
+      link: "https://www.linkedin.com/in/abhinav-cheruku-46a224304/",
+    },
   ];
 
   return (
@@ -94,16 +117,22 @@ function About() {
           .
         </p>
         <p>
-          I create, responsive
-          websites with clean design and useful features, always exploring ways
-          to make technology easier and more engaging.
+          I create, responsive websites with clean design and useful features,
+          always exploring ways to make technology easier and more engaging.
         </p>
       </div>
 
       {/* Image Row */}
       <div className="image-row">
         {imageRow.map((src, idx) => (
-          <img key={idx} src={src} alt={`Image ${idx + 1}`} className="row-image fade-in-img" loading="lazy" onLoad={(e) => e.target.classList.add("loaded") }/>
+          <img
+            key={idx}
+            src={src}
+            alt={`Image ${idx + 1}`}
+            className="row-image fade-in-img"
+            loading="lazy"
+            onLoad={(e) => e.target.classList.add("loaded")}
+          />
         ))}
       </div>
 
@@ -114,7 +143,7 @@ function About() {
       </div>
 
       <img
-        src="https://u.cubeupload.com/ashishl/Screenshot2025081023.png"
+        src={twitch}
         alt="Workspace"
         className="feature-image"
       />
@@ -139,15 +168,19 @@ function About() {
       </div>
 
       {/* Tech Carousel */}
-      <div className="tech-stack-section1">
-        <div className="tech-track">
-          {[...techIcons, ...techIcons].map((tech, idx) => (
-            <div key={idx} className="tech-item">
-              {tech.icon}
-              <span>{tech.name}</span>
-            </div>
-          ))}
-        </div>
+      <div className="tech-stack-carousel">
+        <LogoLoop
+          logos={techLogos}
+          speed={120}
+          direction="left"
+          logoHeight={64}
+          gap={50}
+          pauseOnHover
+          scaleOnHover
+          fadeOut
+          fadeOutColor="#fff"
+          ariaLabel="Tech stack logos"
+        />
       </div>
 
       {/* Experience */}
@@ -168,7 +201,7 @@ function About() {
                   alt={`Experience ${i + 1}`}
                   className="edu-image fade-in-img"
                   loading="lazy"
-                  onLoad={(e) => e.target.classList.add("loaded") }
+                  onLoad={(e) => e.target.classList.add("loaded")}
                 />
               ))}
             </div>
@@ -187,11 +220,19 @@ function About() {
             {edu.images.map((row, i) => (
               <div
                 key={i}
-                className={`education-images ${row.length === 1 ? "single" : "double"}`}
+                className={`education-images ${
+                  row.length === 1 ? "single" : "double"
+                }`}
               >
                 {row.map((src, j) => (
-                  <img key={j} src={src} alt="Education" className="edu-image fade-in-img" loading="lazy" 
-                  onLoad={(e) => e.target.classList.add("loaded") }/>
+                  <img
+                    key={j}
+                    src={src}
+                    alt="Education"
+                    className="edu-image fade-in-img"
+                    loading="lazy"
+                    onLoad={(e) => e.target.classList.add("loaded")}
+                  />
                 ))}
               </div>
             ))}

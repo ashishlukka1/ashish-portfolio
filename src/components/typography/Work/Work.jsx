@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./Work.css";
+import OliveCryptoImage from "../../../assets/home/olive_crypto.webp";
+import LibraryImage from "../../../assets/home/library.webp";
+import BlogAppImage from "../../../assets/home/draftblogapp.webp";
+import SeminarHallImage from "../../../assets/home/seminarhall.webp";
+import LumoraImage from "../../../assets/home/lumora.webp";
 import { useNavigate } from "react-router-dom";
 
 export default function Work() {
@@ -8,11 +13,11 @@ export default function Work() {
   const [loading, setLoading] = useState(true);
 
   const workImages = [
-    { src: "https://u.cubeupload.com/ashishl/202508101900Centered.png", alt: "Olive Crypto Systems" },
-    { src: "https://u.cubeupload.com/ashishl/202508102003ModernLa.png", alt: "Digital Academic Library" },
-    { src: "https://u.cubeupload.com/ashishl/202508102015Mockupwi.png", alt: "Draft BlogApp" },
-    { src: "https://u.cubeupload.com/ashishl/202508102024VibrantM.png", alt: "Campus Hall Scheduler" },
-    { src: "https://u.cubeupload.com/ashishl/Untitleddesign41.png", alt: "Lumora" }
+    { src: OliveCryptoImage, alt: "Olive Crypto Systems" },
+    { src: LibraryImage, alt: "Digital Academic Library" },
+    { src: BlogAppImage, alt: "Draft BlogApp" },
+    { src: SeminarHallImage, alt: "Campus Hall Scheduler" },
+    { src: LumoraImage, alt: "Lumora" }
   ];
 
   const handleImageLoad = () => {
@@ -20,16 +25,12 @@ export default function Work() {
   };
 
   useEffect(() => {
-    if (imagesLoaded === workImages.length) {
-      const timeout = setTimeout(() => {
-        setLoading(false);
-        document.body.style.overflow = "auto"; // enable scroll
-      }, 500);
-      return () => clearTimeout(timeout);
-    } else {
-      document.body.style.overflow = "hidden"; // lock scroll while loading
-    }
-  }, [imagesLoaded, workImages.length]);
+    // show loader briefly, then fade
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1200);
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleImageClick = (alt) => {
     navigate(`/${alt.replace(/\s+/g, "-").toLowerCase()}`);

@@ -2,6 +2,30 @@ import React from "react";
 import "./Seminar.css";
 import ProjectNav from "../ProjectNav/ProjectNav";
 
+import landingPage from "../../../assets/seminar/landing.webp";
+import loginPage from "../../../assets/seminar/login page.webp";
+import forgotPassword from "../../../assets/seminar/forgot password.webp";
+
+// ✅ Faculty images
+import userDash1 from "../../../assets/seminar/user dash-1.webp";
+import chooseDateUser from "../../../assets/seminar/choose date -user.webp";
+import timeSlotUserDash from "../../../assets/seminar/time slot -usre dash.webp";
+import userManageBookings from "../../../assets/seminar/user -managebookings.webp";
+import userSettings from "../../../assets/seminar/user- settings.webp";
+
+// ✅ Club images
+import clubRegistration from "../../../assets/seminar/club registration.webp";
+import clubReg1 from "../../../assets/seminar/club reg-1.webp";
+import clubReg2 from "../../../assets/seminar/club reg-2.webp";
+import clubReg3 from "../../../assets/seminar/club reg-3.webp";
+
+// ✅ Admin images
+import adminDash from "../../../assets/seminar/admin dash.webp";
+import adminBookingCalender from "../../../assets/seminar/admin booking calender.webp";
+import adminBookingReq from "../../../assets/seminar/admin - booking req.webp";
+import adminClubReq from "../../../assets/seminar/admin club req.webp";
+import banner from "../../../assets/seminar/banner.webp";
+
 function Seminar() {
   // Reusable image with caption
   const ImageWithCaption = ({ src, alt }) => (
@@ -32,82 +56,50 @@ function Seminar() {
 
   // Feature images
   const featureImages = [
-    {
-      src: "https://u.cubeupload.com/ashishl/landing.png",
-      alt: "Landing Page",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/loginpage.png",
-      alt: "Login Page for all users",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/forgotpassword.png",
-      alt: "Forgot Password Page",
-    },
-  ];
+  { src: landingPage, alt: "Landing Page" },
+  { src: loginPage, alt: "Login Page for all users" },
+  { src: forgotPassword, alt: "Forgot Password Page" },
+];
 
-  const facultyImages = [
-    {
-      src: "https://u.cubeupload.com/ashishl/userdash1.png",
-      alt: "User – Dashboard (Display of all seminar halls)",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/choosedateuser.png",
-      alt: "Detailed view of a seminar hall (Choose date and time slot)",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/timeslotusredash.png",
-      alt: "Fill the details and time slot to book the hall",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/usermanagebookings.png",
-      alt: "User – Manage Bookings (View, cancel bookings)",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/usersettings.png",
-      alt: "User – Settings (Update profile and password)",
-    },
-  ];
+const facultyImages = [
+  { src: userDash1, alt: "User – Dashboard (Display of all seminar halls)" },
+  {
+    src: chooseDateUser,
+    alt: "Detailed view of a seminar hall (Choose date and time slot)",
+  },
+  {
+    src: timeSlotUserDash,
+    alt: "Fill the details and time slot to book the hall",
+  },
+  {
+    src: userManageBookings,
+    alt: "User – Manage Bookings (View, cancel bookings)",
+  },
+  { src: userSettings, alt: "User – Settings (Update profile and password)" },
+];
 
-  const clubImages = [
-    {
-      src: "https://u.cubeupload.com/ashishl/clubregistration.png",
-      alt: "Club – Registration Page",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/clubreg1.png",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/clubreg2.png",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/clubreg3.png",
-      alt: "Club registration form",
-    },
-  ];
+const clubImages = [
+  { src: clubRegistration, alt: "Club – Registration Page" },
+  { src: clubReg1, alt: "Club registration step 1" },
+  { src: clubReg2, alt: "Club registration step 2" },
+  { src: clubReg3, alt: "Club registration step 3" },
+];
 
-  const adminImages = [
-    {
-      src: "https://u.cubeupload.com/ashishl/b2dadmindash.png",
-      alt: "Admin Dashboard – Overview of bookings and halls",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/adminbookingcalender.png",
-      alt: "Calendar view of all bookings with option to filter based on the hall names",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/adminbookingreq.png",
-      alt: "Seminar hall booking requests with options to approve/reject",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/adminclubreq.png",
-      alt: "Club registration requests with options to approve/reject",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/adminclubreq.png",
-      alt: "Club registration requests with options to approve/reject",
-    },
-  ];
+const adminImages = [
+  { src: adminDash, alt: "Admin Dashboard – Overview of bookings and halls" },
+  {
+    src: adminBookingCalender,
+    alt: "Calendar view of all bookings with option to filter based on the hall names",
+  },
+  {
+    src: adminBookingReq,
+    alt: "Seminar hall booking requests with options to approve/reject",
+  },
+  {
+    src: adminClubReq,
+    alt: "Club registration requests with options to approve/reject",
+  }
+];
 
   return (
     <div className="seminar-page">

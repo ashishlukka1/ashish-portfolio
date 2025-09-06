@@ -36,6 +36,7 @@ import TypoWork from "./components/typography/Work/Work";
 import Lumora from "./components/typography/Lumora/Lumora";
 import TypoAbout from "./components/typography/About/About";
 import ScrollToTop from "./components/typography/ScrollToTop";
+import IOSCursor from "./components/typography/Cursor/BlobCursor";
 
 // === Loading Spinner ===
 function LoadingOverlay() {
@@ -74,14 +75,16 @@ function LoadingOverlay() {
 // Typography Layout (/)
 function TypographyLayout({ children }) {
   return (
-    <div className="font-inter bg-white">
+    <div className="">
+      <IOSCursor />
+
       <NewNavbar />
+
       {children}
       <TypoFooter />
     </div>
   );
 }
-
 
 // Original Layout (/og)
 function OriginalLayout({ children, isLoading }) {
@@ -120,7 +123,7 @@ function App() {
 
   return (
     <>
-    <ScrollToTop />
+      <ScrollToTop />
       <Routes>
         {/* Typography Portfolio */}
         <Route

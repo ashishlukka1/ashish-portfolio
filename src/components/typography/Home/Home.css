@@ -46,7 +46,7 @@
 /* Stars */
 .star {
   position: absolute;
-  animation: twinkle 2.5s infinite ease-in-out;
+  
 }
 
 .star-left {
@@ -63,17 +63,6 @@
   width: 68px;
 }
 
-@keyframes twinkle {
-  0%,
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.5;
-    transform: scale(1.2);
-  }
-}
 
 /* Projects grid */
 .projects-grid {

@@ -2,6 +2,36 @@ import React from "react";
 import "./Olive.css";
 import ProjectNav from "../ProjectNav/ProjectNav";
 
+import ifeelgood from "../../../assets/about/ifeelgood.webp";
+import login from "../../../assets/olive/login.webp";
+import register from "../../../assets/olive/register.webp";
+
+// ✅ Imports for Large Images
+import userdash from "../../../assets/olive/userdash.webp";
+import profile from "../../../assets/olive/profile.webp";
+import coursesuser from "../../../assets/olive/coursesuser.webp";
+import mycoursesuser from "../../../assets/olive/mycoursesuser.webp";
+import coursedetailsandunit from "../../../assets/olive/coursedetailsandunits.webp";
+import assessment from "../../../assets/olive/assessment.webp";
+import assginmentblocked from "../../../assets/olive/assginmentblocked.webp";
+import assignmentreview from "../../../assets/olive/assignmentreview.webp";
+import mycertiificatesuser from "../../../assets/olive/mycertiificatesuser.webp";
+
+// ✅ Imports for Checker Images
+import checkerdashboard from "../../../assets/olive/checkerdashboard.webp";
+import checkercoursereview from "../../../assets/olive/checkercoursereview.webp";
+
+// ✅ Imports for Admin Images
+import admindasboard from "../../../assets/olive/admindasboard.webp";
+import addcourse from "../../../assets/olive/addcourse.webp";
+import editcoursetable from "../../../assets/olive/editcoursetable.webp";
+import editcoursebyid from "../../../assets/olive/editcoursebyid.webp";
+import empstatus from "../../../assets/olive/empstatus.webp";
+import certificate from "../../../assets/olive/certificate.webp";
+
+import OliveLogo from "../../../assets/olive/Olive_Logo-removebg-preview.webp";
+
+
 function Olive() {
   // Helper to render an image with lazy loading & caption
   const ImageWithCaption = ({ src, alt }) => (
@@ -23,47 +53,50 @@ function Olive() {
 
   // Images data
   const twoImages = [
-    { src: "https://u.cubeupload.com/ashishl/Snapchat1730730912.jpg", alt: "Olive Crypto Systems Image-2" },
+    { src: ifeelgood, alt: "Olive Crypto Systems Image-2" },
   ];
 
-  const endImages = [
-    { src: "https://u.cubeupload.com/ashishl/login.png", alt: "Login" },
-    { src: "https://u.cubeupload.com/ashishl/register.png", alt: "Register" },
-  ];
+const endImages = [
+  { src: login, alt: "Login" },
+  { src: register, alt: "Register" },
+];
 
-  const largeImages = [
-    { src: "https://u.cubeupload.com/ashishl/userdash.png", alt: "User Dashboard" },
-    { src: "https://u.cubeupload.com/ashishl/profile.png", alt: "Profile Settings" },
-    { src: "https://u.cubeupload.com/ashishl/coursesuser.png", alt: "All Courses" },
-    { src: "https://u.cubeupload.com/ashishl/mycoursesuser.png", alt: "My Courses" },
-    { src: "https://u.cubeupload.com/ashishl/coursedetailsandunit.png", alt: "Course Details and Units Content" },
-    { src: "https://u.cubeupload.com/ashishl/assessment.png", alt: "Assessment Page (For each Unit, Chossen randomly from the sets of assessments available for that unit)" },
-    { src: "https://u.cubeupload.com/ashishl/assginmentblocked.png", alt: "Assessment Blocked (If the user switches the tab 3 times during the assessment)" },
-    { src: "https://u.cubeupload.com/ashishl/assignmentreview.png", alt: "Progress Tracking and Assignment Review (For each Unit)" },
-    { src: "https://u.cubeupload.com/ashishl/coursedetailsandunit.png", alt: "Certificate Generation (After completing all units and assessments)" },
-    { src: "https://u.cubeupload.com/ashishl/mycertiificatesuser.png", alt: "My Certificates (User can download the certificate)" },
-  ];
+// Large Images
+const largeImages = [
+  { src: userdash, alt: "User Dashboard" },
+  { src: profile, alt: "Profile Settings" },
+  { src: coursesuser, alt: "All Courses" },
+  { src: mycoursesuser, alt: "My Courses" },
+  { src: coursedetailsandunit, alt: "Course Details and Units Content" },
+  { src: assessment, alt: "Assessment Page (For each Unit, Chossen randomly from the sets of assessments available for that unit)" },
+  { src: assginmentblocked, alt: "Assessment Blocked (If the user switches the tab 3 times during the assessment)" },
+  { src: assignmentreview, alt: "Progress Tracking and Assignment Review (For each Unit)" },
+  { src: coursedetailsandunit, alt: "Certificate Generation (After completing all units and assessments)" },
+  { src: mycertiificatesuser, alt: "My Certificates (User can download the certificate)" },
+];
 
-  const checkerImages = [
-    { src: "https://u.cubeupload.com/ashishl/checkerdashboard.png", alt: "Checker Dashboard" },
-    { src: "https://u.cubeupload.com/ashishl/checkercoursereview.png", alt: "Course Review (Checker can review the course content before it is made public)" },
-  ];
+// Checker Images
+const checkerImages = [
+  { src: checkerdashboard, alt: "Checker Dashboard" },
+  { src: checkercoursereview, alt: "Course Review (Checker can review the course content before it is made public)" },
+];
 
-  const adminImages = [
-    { src: "https://u.cubeupload.com/ashishl/admindasboard.png", alt: "Admin Navigation bar with all the options" },
-    { src: "https://u.cubeupload.com/ashishl/addcourse.png", alt: "Adding a Course (Admin can add a course with multiple units and assessments)" },
-    { src: "https://u.cubeupload.com/ashishl/editcoursetable.png", alt: "Edit Course Table" },
-    { src: "https://u.cubeupload.com/ashishl/editcoursebyid.png", alt: "Edit an Exisiting Course by ID (Admin can edit the course details, units, and assessments)" },
-    { src: "https://u.cubeupload.com/ashishl/empstatus.png", alt: "Employee Status (Admin can view the status of each employee's progress)" },
-    { src: "https://u.cubeupload.com/ashishl/certificate.png", alt: "Certificate Template (Admin can set the certificate template used for generating certificates)" },
-  ];
+// Admin Images
+const adminImages = [
+  { src: admindasboard, alt: "Admin Navigation bar with all the options" },
+  { src: addcourse, alt: "Adding a Course (Admin can add a course with multiple units and assessments)" },
+  { src: editcoursetable, alt: "Edit Course Table" },
+  { src: editcoursebyid, alt: "Edit an Exisiting Course by ID (Admin can edit the course details, units, and assessments)" },
+  { src: empstatus, alt: "Employee Status (Admin can view the status of each employee's progress)" },
+  { src: certificate, alt: "Certificate Template (Admin can set the certificate template used for generating certificates)" },
+];
 
   return (
     <div className="olive-page">
       {/* Banner */}
       <div className="olive-banner">
         <img
-          src="https://i.postimg.cc/766fzYrG/Olive-Logo-removebg-preview.png"
+          src={OliveLogo}
           alt="Olive Crypto Systems Banner"
           className="banner-img"
           loading="lazy"
@@ -75,7 +108,7 @@ function Olive() {
         {/* Sidebar */}
         <div className="olive-sidebar">
           <img
-            src="https://i.postimg.cc/766fzYrG/Olive-Logo-removebg-preview.png"
+            src={OliveLogo}
             alt="Olive Crypto Systems"
             className="company-logo"
             loading="lazy"

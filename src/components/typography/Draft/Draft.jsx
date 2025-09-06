@@ -1,6 +1,22 @@
 import React from "react";
 import "./Draft.css";
 import ProjectNav from "../ProjectNav/ProjectNav";
+import landingPage from "../../../assets/draft/landing page.webp";
+import loginPage from "../../../assets/draft/login.webp";
+import signupPage from "../../../assets/draft/signup.webp";
+import selectRole from "../../../assets/draft/select role.webp";
+
+import userDash from "../../../assets/draft/user dash.webp";
+import blogUser from "../../../assets/draft/blog user.webp";
+
+import adminDash from "../../../assets/draft/admin dash.webp";
+import blockedByAdmin from "../../../assets/draft/blocked by admin.webp";
+
+import authorDash from "../../../assets/draft/author dash.webp";
+import editArticleAuthor from "../../../assets/draft/edit article author.webp";
+import editArticle from "../../../assets/draft/edit article.webp";
+import editArticleForm from "../../../assets/draft/edit article form.webp";
+
 
 function Draft() {
   // Reusable image with caption
@@ -25,65 +41,35 @@ function Draft() {
   ];
 
   // Feature images
-  const featureImages = [
-    {
-      src: "https://u.cubeupload.com/ashishl/a36landingpage.png",
-      alt: "Landing Page",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/72dlogin.png",
-      alt: "Login Page",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/1d3signup.png",
-      alt: "Sign Up Page",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/selectrole.png",
-      alt: "Sign Up Role Selection",
-    },
-  ];
+const featureImages = [
+  { src: landingPage, alt: "Landing Page" },
+  { src: loginPage, alt: "Login Page" },
+  { src: signupPage, alt: "Sign Up Page" },
+  { src: selectRole, alt: "Sign Up Role Selection" },
+];
 
-  const userImages = [
-    {
-      src: "https://u.cubeupload.com/ashishl/681userdash.png",
-      alt: "User Dashboard (Display of all articles with search and filter)",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/bloguser.png",
-      alt: "View Article and comment on articles",
-    },
-  ];
+const userImages = [
+  {
+    src: userDash,
+    alt: "User Dashboard (Display of all articles with search and filter)",
+  },
+  { src: blogUser, alt: "View Article and comment on articles" },
+];
 
-  const adminImages = [
-    {
-      src: "https://u.cubeupload.com/ashishl/admindash.png",
-      alt: "Admin Dashboard (Option to block the users)",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/blockedbyadmin.png",
-      alt: "User Message when blocked by admin",
-    },
-  ];
+const adminImages = [
+  { src: adminDash, alt: "Admin Dashboard (Option to block the users)" },
+  { src: blockedByAdmin, alt: "User Message when blocked by admin" },
+];
 
-  const authorImages = [
-    {
-      src: "https://u.cubeupload.com/ashishl/authordash.png",
-      alt: "Author Dashboard (All user features with Add Article feature)",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/editarticleauthor.png",
-      alt: "Add Article",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/editarticle.png",
-      alt: "Edit Option on published articles by the author",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/editarticleform.png",
-      alt: "Edit published articles",
-    },
-  ];
+const authorImages = [
+  {
+    src: authorDash,
+    alt: "Author Dashboard (All user features with Add Article feature)",
+  },
+  { src: editArticleAuthor, alt: "Add Article" },
+  { src: editArticle, alt: "Edit Option on published articles by the author" },
+  { src: editArticleForm, alt: "Edit published articles" },
+];
 
   return (
     <div className="draft-page">

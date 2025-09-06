@@ -1,6 +1,33 @@
 import React from "react";
 import "./Library.css";
 import ProjectNav from "../ProjectNav/ProjectNav";
+import landingpage from "../../../assets/library/landing page.webp";
+import guest from "../../../assets/library/guest.webp";
+import signin from "../../../assets/library/signin.webp";
+import signup from "../../../assets/library/signup.webp";
+import chatbotaaa from "../../../assets/library/chat bot aaa.webp";
+
+// ✅ Faculty Images
+import facultyloginpage from "../../../assets/library/faculty login page.webp";
+import requestedbooksfaculty from "../../../assets/library/requested books -faculty.webp";
+import publishbookfaculty from "../../../assets/library/publish book -faculty.webp";
+
+// ✅ Student Images
+import studentloginpage from "../../../assets/library/student login page.webp";
+import studentdash from "../../../assets/library/student dash.webp";
+import coursematerialsdisplay from "../../../assets/library/course materials display.webp";
+import requestabookstudent from "../../../assets/library/request a book -student.webp";
+import offlinebookservice from "../../../assets/library/offline book service.webp";
+import bookconfirmation from "../../../assets/library/book confirmation.webp";
+import confirmationonbooknoti from "../../../assets/library/confirmation on book with noti on mobile.webp";
+import discussionforums from "../../../assets/library/discusion forums.webp";
+import joinavailabeorcreate from "../../../assets/library/join availabe or create new.webp";
+import createanewchatroom2 from "../../../assets/library/create a new chat room 2.webp";
+import chatroom from "../../../assets/library/chat room.webp";
+import chatroommoderation from "../../../assets/library/chat room moderation.webp";
+
+
+
 
 function DigitalAcademicLibrary() {
   // Helper to render an image with lazy loading & caption (same as Olive)
@@ -53,94 +80,37 @@ function DigitalAcademicLibrary() {
   ];
 
   // Images grouped for easier mapping
-  const featureImages = [
-    {
-      src: "https://u.cubeupload.com/ashishl/landingpage.png",
-      alt: "Landing Page",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/guest.png",
-      alt: "Guest Search to check the availability of books without login",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/signin.png",
-      alt: "Login Page with Google Authentication",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/signup.png",
-      alt: "Signup Page with Google Authentication and Role Selection",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/chatbotaaa.png",
-      alt: "Gemini AI Chatbot for answering student queries",
-    },
-  ];
+const featureImages = [
+  { src: landingpage, alt: "Landing Page" },
+  { src: guest, alt: "Guest Search to check the availability of books without login" },
+  { src: signin, alt: "Login Page with Google Authentication" },
+  { src: signup, alt: "Signup Page with Google Authentication and Role Selection" },
+  { src: chatbotaaa, alt: "Gemini AI Chatbot for answering student queries" },
+];
 
-  const facultyImages = [
-    {
-      src: "https://u.cubeupload.com/ashishl/facultyloginpage.png",
-      alt: "Faculty Landing Page after Login",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/requestedbooksfacult.png",
-      alt: "List of Requested Books by Students",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/publishbookfaculty.png",
-      alt: "Publish the book to the digital library based on the request",
-    },
-  ];
+// Faculty Images
+const facultyImages = [
+  { src: facultyloginpage, alt: "Faculty Landing Page after Login" },
+  { src: requestedbooksfaculty, alt: "List of Requested Books by Students" },
+  { src: publishbookfaculty, alt: "Publish the book to the digital library based on the request" },
+];
 
-  const studentImages = [
-    {
-      src: "https://u.cubeupload.com/ashishl/studentloginpage.png",
-      alt: "Student Landing Page after Login",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/studentdash.png",
-      alt: "Student Dashboard with Book Search",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/coursematerialsdispl.png",
-      alt: "View Course Materials and Book Details with Notes",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/requestabookstudent.png",
-      alt: "Request a book from the library if not available",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/offlinebookservice.png",
-      alt: "Office Book Service for Students (Select the book)",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/bookconfirmation.png",
-      alt: "Time Confirmation for taking the book from the library",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/confirmationonbookwi.png",
-      alt: "Book Confirmation with Twilio SMS Notification",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/discusionforums.png",
-      alt: "Discussion Forums for Real-time Communication between Students with Similar Interests",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/joinavailabeorcreate.png",
-      alt: "Join Available or Create New Discussion Forum",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/createanewchatroom2.png",
-      alt: "New Chat Room Creation",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/chatroom.png",
-      alt: "Chat Room",
-    },
-    {
-      src: "https://u.cubeupload.com/ashishl/chatroommoderation.png",
-      alt: "Chat Room Moderation by deleting the chat room if inappropriate messages are sent",
-    },
-  ];
+// Student Images
+const studentImages = [
+  { src: studentloginpage, alt: "Student Landing Page after Login" },
+  { src: studentdash, alt: "Student Dashboard with Book Search" },
+  { src: coursematerialsdisplay, alt: "View Course Materials and Book Details with Notes" },
+  { src: requestabookstudent, alt: "Request a book from the library if not available" },
+  { src: offlinebookservice, alt: "Office Book Service for Students (Select the book)" },
+  { src: bookconfirmation, alt: "Time Confirmation for taking the book from the library" },
+  { src: confirmationonbooknoti, alt: "Book Confirmation with Twilio SMS Notification" },
+  { src: discussionforums, alt: "Discussion Forums for Real-time Communication between Students with Similar Interests" },
+  { src: joinavailabeorcreate, alt: "Join Available or Create New Discussion Forum" },
+  { src: createanewchatroom2, alt: "New Chat Room Creation" },
+  { src: chatroom, alt: "Chat Room" },
+  { src: chatroommoderation, alt: "Chat Room Moderation by deleting the chat room if inappropriate messages are sent" },
+];
+
 
   return (
     <div className="dal-page">
